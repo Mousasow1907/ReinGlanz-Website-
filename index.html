@@ -1,140 +1,146 @@
 <!doctype html>
-<html lang=\"de\">
+<html lang="de">
 <head>
-  <meta charset=\"utf-8\">
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ReinGlanz – Gebäudereinigung Göppingen</title>
-  <script src=\"https://cdn.tailwindcss.com\"></script>
-  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
-  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
-  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap\" rel=\"stylesheet\">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
   <style> body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial} </style>
 </head>
-<body class=\"min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-800\">
-  <header class=\"sticky top-0 z-40 backdrop-blur bg-white/70 border-b\">
-    <div class=\"mx-auto max-w-6xl px-4 py-3 flex items-center justify-between\">
-      <div class=\"flex items-center gap-2\">
-        <span class=\"font-semibold\">ReinGlanz</span>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-800">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="font-semibold">ReinGlanz</span>
       </div>
-      <nav class=\"hidden md:flex items-center gap-6 text-sm\">
-        <a href=\"#leistungen\" class=\"hover:opacity-70\">Leistungen</a>
-        <a href=\"#preise\" class=\"hover:opacity-70\">Preise</a>
-        <a href=\"#zeiten\" class=\"hover:opacity-70\">Zeiten</a>
-        <a href=\"#kontakt\" class=\"hover:opacity-70\">Kontakt</a>
-        <a href=\"#rechtliches\" class=\"hover:opacity-70\">Impressum</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#leistungen" class="hover:opacity-70">Leistungen</a>
+        <a href="#preise" class="hover:opacity-70">Preise</a>
+        <a href="#zeiten" class="hover:opacity-70">Zeiten</a>
+        <a href="#kontakt" class="hover:opacity-70">Kontakt</a>
+        <a href="#rechtliches" class="hover:opacity-70">Impressum</a>
       </nav>
-      <a href=\"#kontakt\" class=\"px-4 py-2 rounded-2xl bg-slate-900 text-white text-sm\">Kostenloses Angebot</a>
+      <a href="#kontakt" class="px-4 py-2 rounded-2xl bg-slate-900 text-white text-sm">Kostenloses Angebot</a>
     </div>
   </header>
 
-  <section class=\"mx-auto max-w-6xl px-4 pt-14 pb-10 md:py-20 grid md:grid-cols-2 gap-8 items-center\">
+  <section class="mx-auto max-w-6xl px-4 pt-14 pb-10 md:py-20 grid md:grid-cols-2 gap-8 items-center">
     <div>
-      <h1 class=\"text-4xl md:text-5xl font-extrabold leading-tight\">Sauber. Zuverlässig. <span class=\"whitespace-nowrap\">Nach Feierabend.</span></h1>
-      <p class=\"mt-4 text-lg text-slate-600\">Wir sind zwei junge Gebäudereiniger (19 & 20) aus <strong>Göppingen</strong> und bieten professionelle Büro- & Unterhaltsreinigung <strong>werktags ab 16:30 Uhr</strong> sowie <strong>am Wochenende ganztägig</strong>.</p>
-      <div class=\"mt-6 flex flex-wrap gap-3\">
-        <a href=\"#kontakt\" class=\"px-4 py-2 rounded-2xl bg-slate-900 text-white text-sm\">Jetzt Angebot anfragen</a>
-        <a href=\"#preise\" class=\"px-4 py-2 rounded-2xl border text-sm\">Preisrechner ansehen</a>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Sauber. Zuverlässig. <span class="whitespace-nowrap">Nach Feierabend.</span></h1>
+      <p class="mt-4 text-lg text-slate-600">Wir sind zwei junge Gebäudereiniger (19 & 20) aus <strong>Göppingen</strong> und bieten professionelle Büro- & Unterhaltsreinigung <strong>werktags ab 16:30 Uhr</strong> sowie <strong>am Wochenende ganztägig</strong>.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="#kontakt" class="px-4 py-2 rounded-2xl bg-slate-900 text-white text-sm">Jetzt Angebot anfragen</a>
+        <a href="#preise" class="px-4 py-2 rounded-2xl border text-sm">Preisrechner ansehen</a>
       </div>
-      <div class=\"mt-6 flex items-center gap-4 text-sm text-slate-500\">
-        <div class=\"flex items-center gap-2\">✔ Versichert (Betriebshaftpflicht)</div>
-        <div class=\"flex items-center gap-2\">★ Zuverlässig & gründlich</div>
-      </div>
-    </div>
-  </section>
-
-  <section id=\"preise\" class=\"mx-auto max-w-6xl px-4 py-12\">
-    <h2 class=\"text-2xl md:text-3xl font-bold\">Preise (Göppingen)</h2>
-    <p class=\"mt-2 text-slate-600\">Transparente Quadratmeterpreise – Stand heute</p>
-    <div class=\"mt-6 grid lg:grid-cols-2 gap-6\">
-      <div class=\"rounded-2xl border\">
-        <div class=\"p-5 border-b\">
-          <div class=\"font-semibold\">Unsere Preise</div>
-          <div class=\"text-slate-500 text-sm\">Fixe Richtwerte</div>
-        </div>
-        <div class=\"p-5 grid sm:grid-cols-2 gap-3\">
-          <div class=\"p-4 border rounded-xl\"><div class=\"font-semibold\">Unterhaltsreinigung (Büro)</div><div class=\"text-sm text-slate-600\">2,20 € / m² · Mindestpauschale 59 €</div></div>
-          <div class=\"p-4 border rounded-xl\"><div class=\"font-semibold\">Fenster/Glas</div><div class=\"text-sm text-slate-600\">3,50 € / m² Glas · Rahmen auf Wunsch</div></div>
-          <div class=\"p-4 border rounded-xl\"><div class=\"font-semibold\">Stundenbasis (kleine Jobs)</div><div class=\"text-sm text-slate-600\">25,00 € / Stunde</div></div>
-          <div class=\"p-4 border rounded-xl\"><div class=\"font-semibold\">Göppingen +10 km</div><div class=\"text-sm text-slate-600\">Anfahrt inkl. · darüber 0,40 €/km</div></div>
-        </div>
-      </div>
-      <div class=\"rounded-2xl border\">
-        <div class=\"p-5 border-b\">
-          <div class=\"font-semibold\">Mini-Rechner</div>
-          <div class=\"text-slate-500 text-sm\">Passt live eure Annahmen an</div>
-        </div>
-        <div class=\"p-5 space-y-4\">
-          <div class=\"grid grid-cols-2 gap-3\">
-            <div><label class=\"text-sm\">Fläche (m²)</label><input id=\"qm\" type=\"number\" value=\"100\" class=\"mt-1 w-full border rounded px-2 py-1\"></div>
-            <div><label class=\"text-sm\">Preis pro m² (€)</label><input id=\"preisQm\" type=\"number\" step=\"0.1\" value=\"2.2\" class=\"mt-1 w-full border rounded px-2 py-1\"></div>
-            <div><label class=\"text-sm\">Einsätze / Woche</label><input id=\"haeufigkeit\" type=\"number\" value=\"2\" class=\"mt-1 w-full border rounded px-2 py-1\"></div>
-            <div><label class=\"text-sm\">Wochen / Monat</label><input id=\"wochen\" type=\"number\" value=\"4\" class=\"mt-1 w-full border rounded px-2 py-1\"></div>
-          </div>
-          <div class=\"grid grid-cols-2 gap-3\">
-            <div><label class=\"text-sm\">Fixkosten / Monat (€)</label><input id=\"fix\" type=\"number\" value=\"200\" class=\"mt-1 w-full border rounded px-2 py-1\"></div>
-            <div><label class=\"text-sm\">Variable Kosten / Monat (€)</label><input id=\"variabel\" type=\"number\" value=\"50\" class=\"mt-1 w-full border rounded px-2 py-1\"></div>
-          </div>
-          <div class=\"p-3 rounded-xl bg-slate-50 border text-sm\" id=\"outQm\"></div>
-          <div class=\"grid grid-cols-2 gap-3\">
-            <div><label class=\"text-sm\">Stunden pro Einsatz</label><input id=\"stdEinsatz\" type=\"number\" value=\"2\" class=\"mt-1 w-full border rounded px-2 py-1\"></div>
-            <div><label class=\"text-sm\">Stundensatz (€)</label><input id=\"stundensatz\" type=\"number\" value=\"25\" class=\"mt-1 w-full border rounded px-2 py-1\"></div>
-          </div>
-          <div class=\"p-3 rounded-xl bg-slate-50 border text-sm\" id=\"outStd\"></div>
-        </div>
+      <div class="mt-6 flex items-center gap-4 text-sm text-slate-500">
+        <div class="flex items-center gap-2">✔ Versichert (Betriebshaftpflicht)</div>
+        <div class="flex items-center gap-2">★ Zuverlässig & gründlich</div>
       </div>
     </div>
   </section>
 
-  <section id=\"rechtliches\" class=\"mx-auto max-w-6xl px-4 py-12\">
-    <h2 class=\"text-2xl md:text-3xl font-bold\">Impressum & Datenschutz</h2>
-    <div class=\"mt-4 grid md:grid-cols-2 gap-6 text-sm text-slate-700\">
-      <div class=\"rounded-2xl border p-4\">
-        <div class=\"font-semibold mb-1\">Impressum</div>
-        <div class=\"text-slate-500 mb-3\">Angaben gemäß § 5 TMG</div>
+  <section id="preise" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-bold">Preise (Göppingen)</h2>
+    <p class="mt-2 text-slate-600">Transparente Quadratmeterpreise – Stand heute</p>
+    <div class="mt-6 grid lg:grid-cols-2 gap-6">
+      <div class="rounded-2xl border">
+        <div class="p-5 border-b">
+          <div class="font-semibold">Unsere Preise</div>
+          <div class="text-slate-500 text-sm">Fixe Richtwerte</div>
+        </div>
+        <div class="p-5 grid sm:grid-cols-2 gap-3 cost-overview-grid">
+          <div class="p-4 border rounded-xl"><div class="font-semibold">Unterhaltsreinigung (Büro)</div><div class="text-sm text-slate-600">2,20 € / m² · Mindestpauschale 59 €</div></div>
+          <div class="p-4 border rounded-xl"><div class="font-semibold">Unterhaltsreinigung (Praxis)</div><div class="text-sm text-slate-600">2,20 € / m²</div></div>
+          <div class="p-4 border rounded-xl"><div class="font-semibold">Unterhaltsreinigung (Schule oder Kindergarten)</div><div class="text-sm text-slate-600">2,20 € / m²</div></div>
+          <div class="p-4 border rounded-xl"><div class="font-semibold">Fenster/Glas</div><div class="text-sm text-slate-600">2,00 € / m² Glas · Rahmen auf Wunsch</div></div>
+        </div>
+      </div>
+      <div class="rounded-2xl border">
+        <div class="p-5 border-b">
+          <div class="font-semibold">Kalkulieren sie ihren Auftrag</div>
+          <div class="text-slate-500 text-sm">Passt live eure Annahmen an</div>
+          <select id="service-select" class="mt-1 w-full border rounded px-2 py-1">
+            <option value="2.2" selected>Unterhaltsreinigung</option>
+            <option value="2.0">Fensterreinigung</option>
+            <option value="4.2">Unterhaltsreinigung + Fenster</option>
+          </select>
+        </div>
+        <div class="p-5 space-y-4">
+          <div class="grid grid-cols-2 gap-3">
+            <div><label class="text-sm">Fläche (m²)</label><input id="qm" type="number" value="100" class="mt-1 w-full border rounded px-2 py-1"></div>
+            <div><label class="text-sm">Preis pro m² (€)</label><input id="preisQm" type="number" step="0.1" value="2.2" class="mt-1 w-full border rounded px-2 py-1"></div>
+            <div><label class="text-sm">Einsätze / Woche</label><input id="haeufigkeit" type="number" value="2" class="mt-1 w-full border rounded px-2 py-1"></div>
+            <div><label class="text-sm">Wochen / Monat</label><input id="wochen" type="number" value="4" class="mt-1 w-full border rounded px-2 py-1"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div><label class="text-sm">Fixkosten / Monat (€)</label><input id="fix" type="number" value="200" class="mt-1 w-full border rounded px-2 py-1"></div>
+            <div><label class="text-sm">Variable Kosten / Monat (€)</label><input id="variabel" type="number" value="50" class="mt-1 w-full border rounded px-2 py-1"></div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border text-sm" id="outQm"></div>
+          <div class="grid grid-cols-2 gap-3">
+            <div><label class="text-sm">Stunden pro Einsatz</label><input id="stdEinsatz" type="number" value="2" class="mt-1 w-full border rounded px-2 py-1"></div>
+            <div><label class="text-sm">Stundensatz (€)</label><input id="stundensatz" type="number" value="25" class="mt-1 w-full border rounded px-2 py-1"></div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border text-sm" id="outStd"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rechtliches" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-bold">Impressum & Datenschutz</h2>
+    <div class="mt-4 grid md:grid-cols-2 gap-6 text-sm text-slate-700">
+      <div class="rounded-2xl border p-4">
+        <div class="font-semibold mb-1">Impressum</div>
+        <div class="text-slate-500 mb-3">Angaben gemäß § 5 TMG</div>
         <p><strong>ReinGlanz Gebäudereinigung</strong></p>
         <p>Göppingen und Umgebung</p>
-        <p>E-Mail: <a href=\"mailto:ReinGlanz@gmail.com\" class=\"underline\">ReinGlanz@gmail.com</a></p>
+        <p>E-Mail: <a href="mailto:ReinGlanz@gmail.com" class="underline">ReinGlanz@gmail.com</a></p>
         <p>Telefon: +49 …</p>
         <p>Vertretungsberechtigte: [Vor- und Nachname Person 1], [Vor- und Nachname Person 2]</p>
         <p>USt-IdNr.: (falls vorhanden)</p>
         <p>Mitglied der Handwerkskammer: (falls zutreffend)</p>
       </div>
-      <div class=\"rounded-2xl border p-4\">
-        <div class=\"font-semibold mb-1\">Datenschutzerklärung (Kurzfassung)</div>
-        <div class=\"text-slate-500 mb-3\">Worum es geht</div>
+      <div class="rounded-2xl border p-4">
+        <div class="font-semibold mb-1">Datenschutzerklärung (Kurzfassung)</div>
+        <div class="text-slate-500 mb-3">Worum es geht</div>
         <p>Wir verarbeiten Ihre Daten (Name, Kontakt, Anfrageinhalte) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
         <p>Hosting/Analyse: keine personenbezogene Analyse-Tools. Daten werden nicht an Dritte verkauft.</p>
-        <p>Ihre Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch. Anfrage an: <a href=\"mailto:ReinGlanz@gmail.com\" class=\"underline\">ReinGlanz@gmail.com</a>.</p>
+        <p>Ihre Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch. Anfrage an: <a href="mailto:ReinGlanz@gmail.com" class="underline">ReinGlanz@gmail.com</a>.</p>
         <p>Weitere Details stellen wir auf Wunsch als vollständige Datenschutzerklärung bereit.</p>
-        <p class=\"text-xs text-slate-500 mt-2\">Hinweis: Diese Inhalte sind allgemeine Vorlagen und ersetzen keine Rechtsberatung.</p>
+        <p class="text-xs text-slate-500 mt-2">Hinweis: Diese Inhalte sind allgemeine Vorlagen und ersetzen keine Rechtsberatung.</p>
       </div>
     </div>
   </section>
 
-  <footer class=\"border-t py-10\">
-    <div class=\"mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-6 text-sm text-slate-600\">
+  <footer class="border-t py-10">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-6 text-sm text-slate-600">
       <div>
-        <div class=\"font-semibold mb-2\">ReinGlanz</div>
+        <div class="font-semibold mb-2">ReinGlanz</div>
         <p>Gebäudereinigung aus Leidenschaft – abends & am Wochenende. Standort: Göppingen.</p>
       </div>
       <div>
-        <div class=\"font-semibold mb-2\">Schnellzugriff</div>
-        <ul class=\"space-y-1\">
-          <li><a class=\"hover:opacity-70\" href=\"#leistungen\">Leistungen</a></li>
-          <li><a class=\"hover:opacity-70\" href=\"#preise\">Preise</a></li>
-          <li><a class=\"hover:opacity-70\" href=\"#kontakt\">Kontakt</a></li>
-          <li><a class=\"hover:opacity-70\" href=\"#rechtliches\">Impressum</a></li>
+        <div class="font-semibold mb-2">Schnellzugriff</div>
+        <ul class="space-y-1">
+          <li><a class="hover:opacity-70" href="#leistungen">Leistungen</a></li>
+          <li><a class="hover:opacity-70" href="#preise">Preise</a></li>
+          <li><a class="hover:opacity-70" href="#kontakt">Kontakt</a></li>
+          <li><a class="hover:opacity-70" href="#rechtliches">Impressum</a></li>
         </ul>
       </div>
       <div>
-        <div class=\"font-semibold mb-2\">Kontakt</div>
-        <ul class=\"space-y-1\">
-          <li>E-Mail: <a href=\"mailto:ReinGlanz@gmail.com\" class=\"underline\">ReinGlanz@gmail.com</a></li>
+        <div class="font-semibold mb-2">Kontakt</div>
+        <ul class="space-y-1">
+          <li>E-Mail: <a href="mailto:ReinGlanz@gmail.com" class="underline">ReinGlanz@gmail.com</a></li>
           <li>Telefon: +49 …</li>
         </ul>
       </div>
     </div>
-    <div class=\"mt-8 text-center text-xs text-slate-400\">© <span id=\"year\"></span> ReinGlanz – Alle Rechte vorbehalten.</div>
+    <div class="mt-8 text-center text-xs text-slate-400">© <span id="year"></span> ReinGlanz – Alle Rechte vorbehalten.</div>
   </footer>
 
   <script>
@@ -152,7 +158,7 @@
       const monat = woche * wochen;
       const gewinn = monat - (fix + variabel);
       document.getElementById('outQm').innerHTML = `
-        <div class=\"font-semibold\">Ergebnis (m²-Modell)</div>
+        <div class="font-semibold">Ergebnis (m²-Modell)</div>
         <div>Umsatz pro Einsatz: ${format(einsatz)} €</div>
         <div>Umsatz pro Woche: ${format(woche)} €</div>
         <div>Umsatz pro Monat: ${format(monat)} €</div>
@@ -166,7 +172,7 @@
       const monatStd = wocheStd * wochen;
       const gewinnStd = monatStd - (fix + variabel);
       document.getElementById('outStd').innerHTML = `
-        <div class=\"font-semibold\">Ergebnis (Stunden-Modell)</div>
+        <div class="font-semibold">Ergebnis (Stunden-Modell)</div>
         <div>Umsatz pro Einsatz: ${format(einsatzStd)} €</div>
         <div>Umsatz pro Woche: ${format(wocheStd)} €</div>
         <div>Umsatz pro Monat: ${format(monatStd)} €</div>
@@ -176,6 +182,11 @@
     }
     document.addEventListener('input', (e)=>{ if(e.target.tagName==='INPUT') recalc(); });
     recalc();
+
+    document.getElementById('service-select').addEventListener('change', function() {
+      document.getElementById('preisQm').value = this.value;
+      recalc();
+    });
   </script>
 </body>
 </html>
