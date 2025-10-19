@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReinGlanz B&E – Gebäudereinigung</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/custom.css">
+</head>
+<body>
+
+  <header class="fixed-header top-0 z-40 solid-header border-b border-gray-200">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <img src="public/images/logo.jpeg" alt="ReinGlanz B&E Logo" class="h-8" />
+        <span class="font-bold text-xl text-glow">ReinGlanz B&E</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#leistungen" class="hover:text-blue-500 transition-colors">Leistungen</a>
+        <a href="#preise" class="hover:text-blue-500 transition-colors">Preise</a>
+        <a href="#zeiten" class="hover:text-blue-500 transition-colors">Zeiten</a>
+        <a href="#kontakt" class="hover:text-blue-500 transition-colors">Kontakt</a>
+        <a href="#rechtliches" class="hover:text-blue-500 transition-colors">Impressum</a>
+        <a href="flyer.html" class="hover:text-blue-500 transition-colors">Flyer</a>
+        <button id="theme-toggle" class="ml-4 text-slate-500 hover:text-blue-500 transition-colors">
+          <svg id="theme-toggle-dark-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+          <svg id="theme-toggle-light-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.464 4.95l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zm1.414 10.606l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 011.414-1.414zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"></path></svg>
+        </button>
+      </nav>
+      <a href="angebot.html" class="btn-primary px-4 py-2 rounded-full text-sm font-bold">Kostenloses Angebot</a>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    <section class="mx-auto max-w-6xl px-4 pt-20 pb-16 md:py-28 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight text-glow">Professionelle Gebäudereinigung.</h1>
+      <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Zwei junge Unternehmer aus <strong>Göppingen</strong>, bereit für makellose Sauberkeit in Ihrem Büro. Wir arbeiten <strong>werktags ab 18 Uhr</strong> und <strong>am Wochenende jederzeit</strong>.</p>
+      <div class="mt-8 flex flex-wrap gap-4 justify-center">
+        <a href="#preise" class="btn-primary px-6 py-3 rounded-full font-bold">Angebot anfragen</a>
+      </div>
+      <div class="mt-8 flex items-center justify-center gap-6 text-sm text-slate-500">
+        <span>★ Versichert</span>
+        <span>★ Zuverlässig & Gründlich</span>
+        <span>★ Jung, motiviert und engagiert</span>
+      </div>
+    </section>
+
+    <section id="leistungen" class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Unsere Leistungen</h2>
+      <p class="mt-2 text-slate-500 text-center">Für eine glänzende und saubere Umgebung.</p>
+      <div class="mt-10 grid md:grid-cols-3 gap-8 text-center">
+        <div class="card p-6">
+          <svg class="h-12 w-12 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M4 17v4M2 19h4M17 3v4M15 5h4M19 17v4M17 19h4M12 5a2 2 0 100-4 2 2 0 000 4zM12 19a2 2 0 100-4 2 2 0 000 4zM12 12a2 2 0 100-4 2 2 0 000 4z" />
+          </svg>
+          <h3 class="font-bold text-xl mt-4 text-glow">Unterhaltsreinigung</h3>
+          <p class="text-sm text-slate-500 mt-2">Regelmäßige Reinigung von Büros und Geschäftsräumen.</p>
+        </div>
+        <div class="card p-6">
+          <svg class="h-12 w-12 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.69l5.66 5.66a8 8 0 11-11.32 0L12 2.69z" />
+          </svg>
+          <h3 class="font-bold text-xl mt-4 text-glow">Glasreinigung</h3>
+          <p class="text-sm text-slate-500 mt-2">Streifenfreie Sauberkeit für Fenster und Glasflächen.</p>
+        </div>
+        <div class="card p-6">
+          <svg class="h-12 w-12 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3 class="font-bold text-xl mt-4 text-glow">Flexible Zeiten</h3>
+          <p class="text-sm text-slate-500 mt-2">Wir arbeiten, wenn Sie es wünschen – auch am Wochenende.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="preise" class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Ihre Investition in Sauberkeit</h2>
+      <p class="mt-2 text-slate-500 text-center">Berechnen Sie die Kosten für Ihre individuelle Reinigung.</p>
+      <div class="mt-10 grid lg:grid-cols-[1fr_2fr] gap-8">
+        <div class="card p-6">
+          <h3 class="font-bold text-xl text-glow">Kostenübersicht</h3>
+          <p class="text-sm text-slate-500 mb-6">Fixe Richtwerte für den Kreis Göppingen</p>
+          <div class="space-y-4">
+            <div class="p-4 border border-gray-200 rounded-xl">
+              <div class="font-semibold">Unterhaltsreinigung (Büro)</div>
+              <div class="text-sm text-slate-500">1,40 € / m² · Mindestpauschale 59 €</div>
+            </div>
+            <div class="p-4 border border-gray-200 rounded-xl">
+              <div class="font-semibold">Fenster/Glas</div>
+              <div class="text-sm text-slate-500">3,50 € / m² Glas · Rahmen auf Wunsch</div>
+            </div>
+            <div class="p-4 border border-gray-200 rounded-xl">
+              <div class="font-semibold">Grundreinigung</div>
+              <div class="text-sm text-slate-500">ab 5,00 € / m² · nach Aufwand</div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-bold text-xl text-glow">Ihr persönlicher Kostenrechner</h3>
+          <p class="text-sm text-slate-500 mb-6">Kalkulieren Sie Ihre monatlichen Kosten</p>
+          <div class="space-y-4">
+            <div>
+              <label class="text-sm font-semibold">Verfügbare Tage</label>
+              <div class="mt-1 grid grid-cols-2 gap-2">
+                <label class="inline-flex items-center"><input type="checkbox" id="day-monday" class="mr-2">Montag</label>
+                <label class="inline-flex items-center"><input type="checkbox" id="day-tuesday" class="mr-2">Dienstag</label>
+                <label class="inline-flex items-center"><input type="checkbox" id="day-wednesday" class="mr-2">Mittwoch</label>
+                <label class="inline-flex items-center"><input type="checkbox" id="day-thursday" class="mr-2">Donnerstag</label>
+                <label class="inline-flex items-center"><input type="checkbox" id="day-friday" class="mr-2">Freitag</label>
+                <label class="inline-flex items-center"><input type="checkbox" id="day-saturday" class="mr-2">Samstag</label>
+                <label class="inline-flex items-center"><input type="checkbox" id="day-sunday" class="mr-2">Sonntag</label>
+              </div>
+            </div>
+            <div>
+              <label for="start-time" class="text-sm font-semibold">Startzeit</label>
+              <input type="time" id="start-time" value="08:00" class="mt-1 w-full rounded px-2 py-1">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div><label class="text-sm">Fläche (m²)</label><input id="qm" type="number" value="100" class="mt-1 w-full rounded px-2 py-1"></div>
+              <div><label class="text-sm">Preis pro m² (€)</label><input id="preisQm" type="text" value="1,4" class="mt-1 w-full rounded px-2 py-1" disabled></div>
+              <div><label class="text-sm">Wochen / Monat</label><input id="wochen" type="number" value="4" class="mt-1 w-full rounded px-2 py-1"></div>
+              <div><label class="text-sm">Anzahl</label><input id="anzahl" type="number" value="0" class="mt-1 w-full rounded px-2 py-1" disabled></div>
+            </div>
+            <div id="outQm" class="p-3 rounded-xl bg-slate-100 border border-gray-200 text-sm space-y-1"></div>
+            <div>
+                <label class="text-sm">Sonstige Fragen</label>
+                <textarea id="anfrage" class="mt-1 w-full rounded px-2 py-1" rows="4"></textarea>
+            </div>
+            <button id="send" class="btn-primary px-6 py-3 rounded-full font-bold w-full">Anfrage senden</button>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="rechtliches" class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Impressum & Datenschutz</h2>
+      <div class="mt-10 grid md:grid-cols-2 gap-8 text-sm">
+        <div class="card p-6">
+          <h3 class="font-semibold mb-1 text-glow">Impressum</h3>
+          <p class="text-slate-500 mb-3">Angaben gemäß § 5 TMG</p>
+          <p><strong>ReinGlanz B&E Gebäudereinigung</strong></p>
+          <p>Blumenstraße 5, 73084 Salach</p>
+          <p>Göppingen und Umgebung</p>
+          <p>E-Mail: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:underline">reinglanzbe@gmail.com</a></p>
+          <p>Vertretungsberechtigte: Emre Karabas und Bleond Mataj</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold mb-1 text-glow">Datenschutzerklärung (Kurzfassung)</h3>
+           <p class="text-slate-500 mb-3">Worum es geht</p>
+          <p>Wir verarbeiten Ihre Daten (Name, Kontakt, Anfrageinhalte) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
+          <p>Ihre Rechte: Auskunft, Berichtigung, Löschung. Anfrage an: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:underline">reinglanzbe@gmail.com</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-200 py-10 mt-12">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-8 text-sm text-slate-500">
+      <div>
+        <div class="font-bold text-lg mb-2 text-glow">ReinGlanz B&E</div>
+        <p>Professionelle Sauberkeit für Ihr Business in Göppingen.</p>
+      </div>
+      <div>
+        <div class="font-semibold mb-2">Navigation</div>
+        <ul class="space-y-1">
+          <li><a class="hover:text-blue-500" href="#leistungen">Leistungen</a></li>
+          <li><a class="hover:text-blue-500" href="#preise">Preise</a></li>
+          <li><a class="hover:text-blue-500" href="#kontakt">Kontakt</a></li>
+          <li><a class="hover:text-blue-500" href="#rechtliches">Impressum</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-2">Kontakt</div>
+        <ul class="space-y-1">
+          <li>E-Mail: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:underline">reinglanzbe@gmail.com</a></li>
+          <li>Blumenstraße 5, 73084 Salach</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-slate-400">© <span id="year"></span> ReinGlanz B&E – Alle Rechte vorbehalten.</div>
+  </footer>
+
+    <script src="public/script.js"></script>
+<div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</div>
+</body>
+</html>
