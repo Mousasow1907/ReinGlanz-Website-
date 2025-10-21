@@ -3,7 +3,7 @@ headers = []
 redirects = []
 
 [functions]
-timeout = 26 # Sekunden (Maximum bei Netlify)
+timeout = "." 
   [functions."*"]
 
 [build]
