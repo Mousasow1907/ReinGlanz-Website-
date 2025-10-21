@@ -3,29 +3,28 @@ headers = []
 redirects = []
 
 [functions]
-timeout = " " 
-  [functions."*"]
+  # global für alle Functions
+  # timeout = 26              # <— optional: als Zahl in Sekunden, nicht als String
+  external_node_modules = ["module-one", "module-two"]
 
-[functions.timeout]
-external_node_modules = [
-  "module-one",
-  "module-two"
-]
+# Optional: per-Function (hier Wildcard für alle)
+# [functions."*"]
+#   timeout = 26
 
 [build]
-publish = "."
-publishOrigin = "default"
+  publish = "."
+  publishOrigin = "default"
 
-  [build.environment]
+[build.environment]
 
-  [build.processing]
+[build.processing]
 
-    [build.processing.css]
+  [build.processing.css]
 
-    [build.processing.html]
+  [build.processing.html]
 
-    [build.processing.images]
+  [build.processing.images]
 
-    [build.processing.js]
+  [build.processing.js]
 
-  [build.services]
+[build.services]
