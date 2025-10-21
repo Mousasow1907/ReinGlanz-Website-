@@ -3,7 +3,7 @@ headers = []
 redirects = []
 
 [functions]
-timeout = "." 
+timeout = " " 
   [functions."*"]
 
 [build]
