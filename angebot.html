@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,16 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/custom.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
 </head>
 <body>
+
+  <div class="bubbles-container" id="bubbles-container"></div>
 
   <header class="sticky top-0 z-40 solid-header border-b border-gray-200">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <a href="index.html" class="flex items-center gap-2">
-          <img src="public/images/logo.jpeg" alt="ReinGlanz B&E Logo" class="h-8" />
+          <img src="logo.jpeg" alt="ReinGlanz B&E Logo" class="h-8" />
           <span class="font-bold text-xl text-glow">ReinGlanz B&E</span>
         </a>
       </div>
@@ -28,10 +30,6 @@
         <a href="index.html#kontakt" class="hover:text-blue-500 transition-colors">Kontakt</a>
         <a href="index.html#rechtliches" class="hover:text-blue-500 transition-colors">Impressum</a>
         <a href="flyer.html" class="hover:text-blue-500 transition-colors">Flyer</a>
-        <button id="theme-toggle" class="ml-4 text-slate-500 hover:text-blue-500 transition-colors">
-          <svg id="theme-toggle-dark-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-          <svg id="theme-toggle-light-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.464 4.95l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zm1.414 10.606l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 011.414-1.414zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"></path></svg>
-        </button>
       </nav>
       <a href="angebot.html" class="btn-primary px-4 py-2 rounded-full text-sm font-bold">Kostenloses Angebot</a>
     </div>
@@ -39,7 +37,7 @@
 
   <main class="mx-auto max-w-4xl px-6 py-8 card mt-10">
     <div class="flex items-center justify-between mb-6">
-      <img src="public/images/logo.jpeg" alt="ReinGlanz B&E Logo" class="h-24" />
+      <img src="logo.jpeg" alt="ReinGlanz B&E Logo" class="h-24" />
       <div class="text-right">
         <h1 class="text-3xl font-bold text-glow">ReinGlanz B&E</h1>
         <p class="text-sm text-slate-500">Professionelle Gebäudereinigung</p>
@@ -53,10 +51,39 @@
       <li>Hygienische Reinigung für Arzt- & Physiopraxen</li>
       <li>Sauberkeitskonzepte für Schulen &amp; Kindergärten</li>
     </ul>
+
+    <div class="mb-10">
+      <h3 class="font-bold text-xl text-glow mb-2">Kostenübersicht</h3>
+      <p class="text-sm text-slate-500 mb-6">Einmaliges kostenloses Angebot – Fixe Richtwerte für den Kreis Göppingen</p>
+      <div class="space-y-4">
+        <div class="offer-item p-4 border border-gray-200 rounded-xl" data-service="praxis">
+          <div class="font-semibold">Unterhaltsreinigung (Praxis)</div>
+          <div class="text-sm text-slate-500">Gratis</div>
+        </div>
+        <div class="offer-item p-4 border border-gray-200 rounded-xl" data-service="schule">
+          <div class="font-semibold">Unterhaltsreinigung (Schule, Kindergarten)</div>
+          <div class="text-sm text-slate-500">Gratis</div>
+        </div>
+        <div class="offer-item p-4 border border-gray-200 rounded-xl" data-service="buero">
+          <div class="font-semibold">Unterhaltsreinigung (Büro)</div>
+          <div class="text-sm text-slate-500">Gratis</div>
+        </div>
+      </div>
+    </div>
+
     <div class="mt-10">
         <h3 class="font-bold text-xl text-glow">Fordern Sie Ihr einmaliges Angebot an</h3>
         <p class="text-sm text-slate-500 mb-6">Füllen Sie das Formular aus, um ein kostenloses und unverbindliches Angebot für eine einmalige Reinigung zu erhalten.</p>
         <div class="space-y-4">
+          <div>
+            <label class="text-sm font-semibold">Gewähltes Angebot</label>
+            <select id="service-select" class="mt-1 w-full rounded px-2 py-1">
+              <option value="">Bitte wählen...</option>
+              <option value="praxis">Unterhaltsreinigung (Praxis) - Gratis</option>
+              <option value="schule">Unterhaltsreinigung (Schule, Kindergarten) - Gratis</option>
+              <option value="buero">Unterhaltsreinigung (Büro) - Gratis</option>
+            </select>
+          </div>
           <div>
             <label class="text-sm font-semibold">Bevorzugter Tag</label>
             <div class="mt-1 grid grid-cols-2 gap-2" id="days-container">
@@ -112,18 +139,8 @@
     <div class="mt-8 text-center text-xs text-slate-400">© <span id="year"></span> ReinGlanz B&E – Alle Rechte vorbehalten.</div>
   </footer>
 
-  <script src="public/angebot.js"></script>
-<div class="bubbles">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-</div>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+  <spline-viewer url="https://prod.spline.design/9ae5e961-832d-4915-8ae0-851d1d64278b/scene.splinecode" class="spline-background"></spline-viewer>
+  <script src="angebot.js"></script>
 </body>
 </html>

@@ -1,8 +1,112 @@
-
 document.addEventListener('DOMContentLoaded', function () {
+    const bubblesContainer = document.getElementById('bubbles-container');
+    
+    function createBubble() {
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        
+        const size = Math.random() * 60 + 20;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        
+        const left = Math.random() * 100;
+        bubble.style.left = `${left}%`;
+        
+        const drift = (Math.random() - 0.5) * 100;
+        bubble.style.setProperty('--drift', `${drift}px`);
+        
+        const duration = Math.random() * 10 + 8;
+        bubble.style.animationDuration = `${duration}s`;
+        
+        const delay = Math.random() * 5;
+        bubble.style.animationDelay = `${delay}s`;
+        
+        if (bubblesContainer) {
+            bubblesContainer.appendChild(bubble);
+        }
+        
+        setTimeout(() => {
+            if (bubble.parentElement) {
+                bubble.remove();
+            }
+        }, (duration + delay) * 1000);
+    }
+    
+    function createFloatingParticle() {
+        const particle = document.createElement('div');
+        particle.className = 'floating-particle';
+        
+        const size = Math.random() * 15 + 5;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        
+        const duration = Math.random() * 5 + 3;
+        particle.style.animationDuration = `${duration}s`;
+        
+        if (bubblesContainer) {
+            bubblesContainer.appendChild(particle);
+        }
+    }
+    
+    function createSparkle() {
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        
+        sparkle.style.left = `${Math.random() * 100}%`;
+        sparkle.style.top = `${Math.random() * 100}%`;
+        
+        const duration = Math.random() * 2 + 1;
+        sparkle.style.animationDuration = `${duration}s`;
+        
+        if (bubblesContainer) {
+            bubblesContainer.appendChild(sparkle);
+        }
+        
+        setTimeout(() => {
+            if (sparkle.parentElement) {
+                sparkle.remove();
+            }
+        }, duration * 1000);
+    }
+    
+    for (let i = 0; i < 15; i++) {
+        setTimeout(() => createBubble(), i * 500);
+    }
+    
+    for (let i = 0; i < 20; i++) {
+        createFloatingParticle();
+    }
+    
+    setInterval(createBubble, 3000);
+    setInterval(createSparkle, 1500);
+    
+    document.querySelectorAll('.offer-item').forEach(item => {
+        item.addEventListener('click', function() {
+            const service = this.getAttribute('data-service');
+            
+            document.querySelectorAll('.offer-item').forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            
+            const serviceSelect = document.getElementById('service-select');
+            if (serviceSelect && service) {
+                serviceSelect.value = service;
+            }
+            
+            const formSection = document.querySelector('.mt-10');
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
     document.getElementById('send').addEventListener('click', function() {
         const qm = document.getElementById('qm').value;
         const anfrage = document.getElementById('anfrage').value;
+        const serviceSelect = document.getElementById('service-select');
+        const selectedService = serviceSelect ? serviceSelect.options[serviceSelect.selectedIndex].text : 'Nicht ausgewählt';
         const days = {
             'monday': 'Montag',
             'tuesday': 'Dienstag',
@@ -22,6 +126,7 @@ Hallo,
 
 ich würde gerne ein einmaliges Angebot anfordern.
 
+Gewähltes Angebot: ${selectedService}
 Fläche: ${qm} m²
 
 Bevorzugter Tag: ${selectedDayName}
@@ -70,44 +175,7 @@ Viele Grüße
         yearEl.textContent = new Date().getFullYear();
     }
 
-    // Dark Mode Toggle
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
-    // Change the icons inside the button based on previous settings
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        themeToggleLightIcon.classList.remove('hidden');
-        document.documentElement.classList.add('dark');
-    } else {
-        themeToggleDarkIcon.classList.remove('hidden');
-        document.documentElement.classList.remove('dark');
-    }
-
-    themeToggleBtn.addEventListener('click', function() {
-        // toggle icons inside button
-        themeToggleDarkIcon.classList.toggle('hidden');
-        themeToggleLightIcon.classList.toggle('hidden');
-
-        // if set via local storage previously
-        if (localStorage.getItem('color-theme')) {
-            if (localStorage.getItem('color-theme') === 'light') {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            }
-
-        // if NOT set via local storage previously
-        } else {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            }
-        }
-    });
+    // Force Dark Mode (always on)
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('color-theme', 'dark');
 });

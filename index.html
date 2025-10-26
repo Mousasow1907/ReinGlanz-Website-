@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,15 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/custom.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
 </head>
 <body>
+
+  <div class="bubbles-container" id="bubbles-container"></div>
 
   <header class="fixed-header top-0 z-40 solid-header border-b border-gray-200">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <img src="public/images/logo.jpeg" alt="ReinGlanz B&E Logo" class="h-8" />
+        <img src="logo.jpeg" alt="ReinGlanz B&E Logo" class="h-8" />
         <span class="font-bold text-xl text-glow">ReinGlanz B&E</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -26,10 +28,6 @@
         <a href="#kontakt" class="hover:text-blue-500 transition-colors">Kontakt</a>
         <a href="#rechtliches" class="hover:text-blue-500 transition-colors">Impressum</a>
         <a href="flyer.html" class="hover:text-blue-500 transition-colors">Flyer</a>
-        <button id="theme-toggle" class="ml-4 text-slate-500 hover:text-blue-500 transition-colors">
-          <svg id="theme-toggle-dark-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-          <svg id="theme-toggle-light-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.464 4.95l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zm1.414 10.606l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 011.414-1.414zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"></path></svg>
-        </button>
       </nav>
       <a href="angebot.html" class="btn-primary px-4 py-2 rounded-full text-sm font-bold">Kostenloses Angebot</a>
     </div>
@@ -85,17 +83,29 @@
           <h3 class="font-bold text-xl text-glow">Kostenübersicht</h3>
           <p class="text-sm text-slate-500 mb-6">Fixe Richtwerte für den Kreis Göppingen</p>
           <div class="space-y-4">
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-item p-4 border border-gray-200 rounded-xl" data-gebiet="praxis" data-price="1.8">
+              <div class="font-semibold">Unterhaltsreinigung (Praxis)</div>
+              <div class="text-sm text-slate-500">ab 1,80 € / m²</div>
+            </div>
+            <div class="offer-item p-4 border border-gray-200 rounded-xl" data-gebiet="praxis-fenster" data-price="2.2">
+              <div class="font-semibold">Unterhaltsreinigung (Praxis) + Fenster</div>
+              <div class="text-sm text-slate-500">ab 2,20 € / m²</div>
+            </div>
+            <div class="offer-item p-4 border border-gray-200 rounded-xl" data-gebiet="schule" data-price="1.6">
+              <div class="font-semibold">Unterhaltsreinigung (Schule, Kindergarten)</div>
+              <div class="text-sm text-slate-500">ab 1,60 € / m²</div>
+            </div>
+            <div class="offer-item p-4 border border-gray-200 rounded-xl" data-gebiet="schule-fenster" data-price="2.0">
+              <div class="font-semibold">Unterhaltsreinigung (Schule, Kindergarten + Fenster)</div>
+              <div class="text-sm text-slate-500">ab 2,00 € / m²</div>
+            </div>
+            <div class="offer-item p-4 border border-gray-200 rounded-xl" data-gebiet="buero" data-price="1.4">
               <div class="font-semibold">Unterhaltsreinigung (Büro)</div>
               <div class="text-sm text-slate-500">1,40 € / m² · Mindestpauschale 59 €</div>
             </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
-              <div class="font-semibold">Fenster/Glas</div>
-              <div class="text-sm text-slate-500">3,50 € / m² Glas · Rahmen auf Wunsch</div>
-            </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
-              <div class="font-semibold">Grundreinigung</div>
-              <div class="text-sm text-slate-500">ab 5,00 € / m² · nach Aufwand</div>
+            <div class="offer-item p-4 border border-gray-200 rounded-xl" data-gebiet="buero-fenster" data-price="1.8">
+              <div class="font-semibold">Unterhaltsreinigung (Büro) + Fenster</div>
+              <div class="text-sm text-slate-500">ab 1,80 € / m²</div>
             </div>
           </div>
         </div>
@@ -103,6 +113,18 @@
           <h3 class="font-bold text-xl text-glow">Ihr persönlicher Kostenrechner</h3>
           <p class="text-sm text-slate-500 mb-6">Kalkulieren Sie Ihre monatlichen Kosten</p>
           <div class="space-y-4">
+            <div>
+              <label class="text-sm font-semibold">Gebiet</label>
+              <select id="gebiet" class="mt-1 w-full rounded px-2 py-1">
+                <option value="">Bitte wählen...</option>
+                <option value="praxis" data-price="1.8">Unterhaltsreinigung (Praxis) - ab 1,80 € / m²</option>
+                <option value="praxis-fenster" data-price="2.2">Unterhaltsreinigung (Praxis) + Fenster - ab 2,20 € / m²</option>
+                <option value="schule" data-price="1.6">Unterhaltsreinigung (Schule, Kindergarten) - ab 1,60 € / m²</option>
+                <option value="schule-fenster" data-price="2.0">Unterhaltsreinigung (Schule, Kindergarten + Fenster) - ab 2,00 € / m²</option>
+                <option value="buero" data-price="1.4">Unterhaltsreinigung (Büro) - 1,40 € / m² · Mindestpauschale 59 €</option>
+                <option value="buero-fenster" data-price="1.8">Unterhaltsreinigung (Büro) + Fenster - ab 1,80 € / m²</option>
+              </select>
+            </div>
             <div>
               <label class="text-sm font-semibold">Verfügbare Tage</label>
               <div class="mt-1 grid grid-cols-2 gap-2">
@@ -137,11 +159,39 @@
       </div>
     </section>
 
+    <section id="kontakt" class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Kontaktieren Sie uns</h2>
+      <p class="mt-2 text-slate-500 text-center">Haben Sie Fragen? Nehmen Sie direkt Kontakt zu uns auf.</p>
+      <div class="mt-10 max-w-2xl mx-auto">
+        <div class="card p-6">
+          <div class="space-y-4">
+            <div>
+              <label for="contact-name" class="text-sm font-semibold">Name</label>
+              <input type="text" id="contact-name" class="mt-1 w-full rounded px-2 py-1" placeholder="Ihr Name">
+            </div>
+            <div>
+              <label for="contact-email" class="text-sm font-semibold">E-Mail</label>
+              <input type="email" id="contact-email" class="mt-1 w-full rounded px-2 py-1" placeholder="Ihre E-Mail-Adresse">
+            </div>
+            <div>
+              <label for="contact-phone" class="text-sm font-semibold">Telefon (optional)</label>
+              <input type="tel" id="contact-phone" class="mt-1 w-full rounded px-2 py-1" placeholder="Ihre Telefonnummer">
+            </div>
+            <div>
+              <label for="contact-message" class="text-sm font-semibold">Nachricht</label>
+              <textarea id="contact-message" class="mt-1 w-full rounded px-2 py-1" rows="5" placeholder="Ihre Nachricht an uns"></textarea>
+            </div>
+            <button id="contact-send" class="btn-primary px-6 py-3 rounded-full font-bold w-full">Nachricht senden</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     
 
     <section id="rechtliches" class="mx-auto max-w-6xl px-4 py-12">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Impressum & Datenschutz</h2>
-      <div class="mt-10 grid md:grid-cols-2 gap-8 text-sm">
+      <div class="mt-10 grid md:grid-cols-3 gap-8 text-sm">
         <div class="card p-6">
           <h3 class="font-semibold mb-1 text-glow">Impressum</h3>
           <p class="text-slate-500 mb-3">Angaben gemäß § 5 TMG</p>
@@ -153,9 +203,21 @@
         </div>
         <div class="card p-6">
           <h3 class="font-semibold mb-1 text-glow">Datenschutzerklärung (Kurzfassung)</h3>
-           <p class="text-slate-500 mb-3">Worum es geht</p>
-          <p>Wir verarbeiten Ihre Daten (Name, Kontakt, Anfrageinhalte) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
-          <p>Ihre Rechte: Auskunft, Berichtigung, Löschung. Anfrage an: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:underline">reinglanzbe@gmail.com</a>.</p>
+          <p>Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Personenbezogene Daten werden auf dieser Webseite nur im notwendigen Umfang erhoben. In keinem Fall werden die erhobenen Daten verkauft oder aus anderen Gründen an Dritte weitergegeben.</p>
+          <p>1. Verantwortlicher:<br/>ReinglanzB&amp;E;, Blumenstraße 5, 73084 Salach</p>
+          <p>2. Erhebung und Verarbeitung von Daten:<br/>- Beim Aufruf unserer Webseite werden automatisch Informationen gespeichert (z.B. Server-Logfiles).<br/>- Wenn Sie uns per E-Mail oder Telefon kontaktieren, speichern wir Ihre Angaben zur Bearbeitung der Anfrage.</p>
+          <p>3. Cookies:<br/>Unsere Website verwendet ggf. Cookies, um nutzerfreundlich zu sein. Sie können die Speicherung von Cookies in den Einstellungen Ihres Browsers deaktivieren.</p>
+          <p>4. Rechte der Nutzer:<br/>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Ebenso können Sie der Verarbeitung widersprechen und haben ein Recht auf Datenübertragbarkeit.</p>
+          <p>5. Beschwerderecht:<br/>Sie haben das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold mb-1 text-glow">Allgemeine Geschäftsbedingungen (AGB)</h3>
+          <p>1. Geltungsbereich:<br/>Diese AGB gelten für alle Verträge zwischen ReinglanzB&amp;E; und Kunden aus dem Bereich Firmen und Institutionen.</p>
+          <p>2. Leistungen:<br/>Wir bieten professionelle Reinigungsdienstleistungen für Büros, Praxen, Schulen, Kindergärten und weitere Einrichtungen.</p>
+          <p>3. Vertragsschluss:<br/>Ein Vertrag kommt durch eine schriftliche oder mündliche Bestätigung zustande.</p>
+          <p>4. Preise und Zahlung:<br/>Die Preise richten sich nach individueller Vereinbarung. Zahlungen sind nach Rechnungsstellung innerhalb von 14 Tagen ohne Abzug fällig.</p>
+          <p>5. Kündigung:<br/>Verträge können von beiden Seiten mit einer Frist von 4 Wochen zum Monatsende gekündigt werden, sofern nichts anderes vereinbart ist.</p>
+          <p>6. Haftung:<br/>Wir haften für Schäden nur bei grober Fahrlässigkeit oder Vorsatz. Für normale Abnutzung wird keine Haftung übernommen.</p>
         </div>
       </div>
     </section>
@@ -187,18 +249,8 @@
     <div class="mt-8 text-center text-xs text-slate-400">© <span id="year"></span> ReinGlanz B&E – Alle Rechte vorbehalten.</div>
   </footer>
 
-    <script src="public/script.js"></script>
-<div class="bubbles">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-</div>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+  <spline-viewer url="https://prod.spline.design/9ae5e961-832d-4915-8ae0-851d1d64278b/scene.splinecode" class="spline-background"></spline-viewer>
+  <script src="script.js"></script>
 </body>
 </html>

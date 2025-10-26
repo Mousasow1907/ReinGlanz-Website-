@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ReinGlanz B&E Flyer</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/custom.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
 </head>
 <body>
   <header class="fixed-header top-0 z-40 solid-header border-b border-gray-200">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <a href="index.html" class="flex items-center gap-2">
-          <img src="public/images/logo.jpeg" alt="ReinGlanz B&E Logo" class="h-8" />
+          <img src="logo.jpeg" alt="ReinGlanz B&E Logo" class="h-8" />
           <span class="font-bold text-xl text-glow">ReinGlanz B&E</span>
         </a>
       </div>
@@ -28,7 +28,7 @@
   </header>
   <main class="mx-auto max-w-4xl px-6 py-24 card">
     <div class="flex items-center justify-between mb-6">
-      <img src="public/images/logo.jpeg" alt="ReinGlanz B&E Logo" class="h-24" />
+      <img src="logo.jpeg" alt="ReinGlanz B&E Logo" class="h-24" />
       <div class="text-right">
         <h1 class="text-3xl font-bold text-glow">ReinGlanz B&E</h1>
         <p class="text-sm text-slate-500">Professionelle Gebäudereinigung</p>
@@ -42,9 +42,16 @@
       <li>Hygienische Reinigung für Arzt- & Physiopraxen</li>
       <li>Sauberkeitskonzepte für Schulen &amp; Kindergärten</li>
     </ul>
-    <div class="flex flex-col items-center justify-center mt-8">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://reinglanz.netlify.app" alt="QR Code zur Website" class="flyer-qr-code mb-4" />
-      <p class="text-base text-white text-center flyer-text">Scannen sie den QR-Code und besuchen Sie unsere Website für ein kostenloses Angebot</p>
+    <div class="flex items-center justify-between mt-8">
+      <div class="flex-1 mr-8">
+        <p class="text-xl text-white font-bold mb-3">Kontaktieren Sie uns:</p>
+        <p class="text-xl text-white font-bold mb-3">ReinGlanz B&amp;E Gebäudereinigung</p>
+        <p class="text-lg text-white mt-2">E-Mail: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 hover:underline">reinglanzbe@gmail.com</a></p>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://reinglanz.netlify.app" alt="QR Code zur Website" class="flyer-qr-code mb-3" />
+        <p class="text-white text-center flyer-text max-w-[220px]">Scannen Sie den QR-Code und besuchen Sie unsere Website für ein kostenloses Angebot</p>
+      </div>
     </div>
   </main>
   <script>
@@ -82,17 +89,7 @@
         }
     });
   </script>
-<div class="bubbles">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-</div>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+  <spline-viewer url="https://prod.spline.design/9ae5e961-832d-4915-8ae0-851d1d64278b/scene.splinecode" class="spline-background"></spline-viewer>
 </body>
 </html>
