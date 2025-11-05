@@ -5,6 +5,47 @@ document.addEventListener('DOMContentLoaded', function () {
     const anzahlEl = document.getElementById('anzahl');
     const outQmEl = document.getElementById('outQm');
     const dayCheckboxes = document.querySelectorAll('input[type="checkbox"][id^="day-"]');
+    const serviceTabs = document.querySelectorAll('.service-tab');
+    const offerCards = document.querySelectorAll('.offer-card');
+
+    function selectService(service, price) {
+        serviceTabs.forEach(tab => {
+            if (tab.dataset.service === service) {
+                tab.classList.add('active');
+            } else {
+                tab.classList.remove('active');
+            }
+        });
+
+        offerCards.forEach(card => {
+            if (card.dataset.service === service) {
+                card.classList.add('selected');
+            } else {
+                card.classList.remove('selected');
+            }
+        });
+
+        if (preisQmEl) {
+            preisQmEl.value = price.toString().replace('.', ',');
+        }
+        calculate();
+    }
+
+    serviceTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const service = this.dataset.service;
+            const price = parseFloat(this.dataset.price);
+            selectService(service, price);
+        });
+    });
+
+    offerCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const service = this.dataset.service;
+            const price = parseFloat(this.dataset.price);
+            selectService(service, price);
+        });
+    });
 
     function calculate() {
         if(!qmEl || !preisQmEl || !wochenEl || !outQmEl || !anzahlEl) return;

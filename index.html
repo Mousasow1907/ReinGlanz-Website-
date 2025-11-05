@@ -85,35 +85,35 @@
           <h3 class="font-bold text-xl text-glow">Kostenübersicht</h3>
           <p class="text-sm text-slate-500 mb-6">Fixe Richtwerte für den Kreis Göppingen</p>
           <div class="space-y-3">
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="buero" data-price="1.4">
               <div class="font-semibold">Unterhaltsreinigung (Büro)</div>
               <div class="text-sm text-slate-500">1,40 € / m² · Mindestpauschale 59 €</div>
             </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="buero-fenster" data-price="1.8">
               <div class="font-semibold">Unterhaltsreinigung (Büro) + Fenster</div>
               <div class="text-sm text-slate-500">ab 1,80 € / m²</div>
             </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="praxis" data-price="1.8">
               <div class="font-semibold">Unterhaltsreinigung (Praxis)</div>
               <div class="text-sm text-slate-500">ab 1,80 € / m²</div>
             </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="praxis-fenster" data-price="2.2">
               <div class="font-semibold">Unterhaltsreinigung (Praxis) + Fenster</div>
               <div class="text-sm text-slate-500">ab 2,20 € / m²</div>
             </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="schule" data-price="1.6">
               <div class="font-semibold">Unterhaltsreinigung (Schule, Kindergarten)</div>
               <div class="text-sm text-slate-500">ab 1,60 € / m²</div>
             </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="schule-fenster" data-price="2.0">
               <div class="font-semibold">Unterhaltsreinigung (Schule, Kindergarten) + Fenster</div>
               <div class="text-sm text-slate-500">ab 2,00 € / m²</div>
             </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="fenster" data-price="3.5">
               <div class="font-semibold">Fenster/Glas</div>
               <div class="text-sm text-slate-500">3,50 € / m² Glas · Rahmen auf Wunsch</div>
             </div>
-            <div class="p-4 border border-gray-200 rounded-xl">
+            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="grund" data-price="5.0">
               <div class="font-semibold">Grundreinigung</div>
               <div class="text-sm text-slate-500">ab 5,00 € / m² · nach Aufwand</div>
             </div>
@@ -121,8 +121,21 @@
         </div>
         <div class="card p-6">
           <h3 class="font-bold text-xl text-glow">Ihr persönlicher Kostenrechner</h3>
-          <p class="text-sm text-slate-500 mb-6">Kalkulieren Sie Ihre monatlichen Kosten</p>
-          <div class="space-y-4">
+          <p class="text-sm text-slate-500 mb-4">Kalkulieren Sie Ihre monatlichen Kosten</p>
+          <div>
+            <label class="text-sm font-semibold">Wählen Sie Ihre Reinigungsart</label>
+            <div class="mt-2 grid grid-cols-2 gap-2" id="service-tabs">
+              <div class="service-tab active" data-service="buero" data-price="1.4">Büro</div>
+              <div class="service-tab" data-service="buero-fenster" data-price="1.8">Büro + Fenster</div>
+              <div class="service-tab" data-service="praxis" data-price="1.8">Praxis</div>
+              <div class="service-tab" data-service="praxis-fenster" data-price="2.2">Praxis + Fenster</div>
+              <div class="service-tab" data-service="schule" data-price="1.6">Schule/Kiga</div>
+              <div class="service-tab" data-service="schule-fenster" data-price="2.0">Schule/Kiga + Fenster</div>
+              <div class="service-tab" data-service="fenster" data-price="3.5">Nur Fenster</div>
+              <div class="service-tab" data-service="grund" data-price="5.0">Grundreinigung</div>
+            </div>
+          </div>
+          <div class="space-y-4 mt-4">
             <div>
               <label class="text-sm font-semibold">Verfügbare Tage</label>
               <div class="mt-1 grid grid-cols-2 gap-2">

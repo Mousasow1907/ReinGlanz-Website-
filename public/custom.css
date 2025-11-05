@@ -182,3 +182,62 @@ html.dark .card:hover {
     font-weight: bold;
     font-family: 'Arial', sans-serif;
 }
+
+.offer-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: #3b82f6;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+    transform: translateX(5px);
+}
+
+html.dark .offer-card:hover {
+    background-color: rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+}
+
+.offer-card.selected {
+    background-color: rgba(59, 130, 246, 0.15);
+    border-color: #3b82f6;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+html.dark .offer-card.selected {
+    background-color: rgba(59, 130, 246, 0.25);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.7);
+}
+
+.service-tab {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.service-tab:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: #3b82f6;
+}
+
+.service-tab.active {
+    background-color: #3b82f6;
+    color: white;
+    border-color: #3b82f6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+html.dark .service-tab:hover {
+    background-color: rgba(59, 130, 246, 0.2);
+}
+
+html.dark .service-tab.active {
+    background-color: #3b82f6;
+    color: white;
+}
