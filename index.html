@@ -11,35 +11,31 @@
   <link rel="stylesheet" href="public/style.css">
   <link rel="stylesheet" href="public/custom.css">
 </head>
-<body>
+<body class="dark">
 
-  <header class="fixed-header top-0 z-40 solid-header border-b border-gray-200 w-full">
+  <header class="fixed-header top-0 z-40 solid-header border-b border-gray-700 dark:border-gray-700 w-full dark:bg-gray-900">
     <div class="px-4 py-3 flex items-center justify-center md:justify-between">
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#leistungen" class="hover:text-blue-500 transition-colors">Leistungen</a>
-        <a href="#preise" class="hover:text-blue-500 transition-colors">Preise</a>
-        <a href="index.html#kontakt" class="hover:text-blue-500 transition-colors">Kontakt</a>
-        <a href="#rechtliches" class="hover:text-blue-500 transition-colors">Impressum</a>
-        <a href="#rechtliches" class="hover:text-blue-500 transition-colors">Datenschutzerklärung</a>
-        <button id="theme-toggle" class="ml-4 text-slate-500 hover:text-blue-500 transition-colors">
-          <svg id="theme-toggle-dark-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-          <svg id="theme-toggle-light-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.464 4.95l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zm1.414 10.606l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 011.414-1.414zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"></path></svg>
-        </button>
+      <nav class="hidden md:flex items-center gap-6 text-sm dark:text-gray-200">
+        <a href="#leistungen" class="hover:text-blue-400 transition-colors">Leistungen</a>
+        <a href="#preise" class="hover:text-blue-400 transition-colors">Preise</a>
+        <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
+        <a href="#rechtliches" class="hover:text-blue-400 transition-colors">Impressum</a>
+        <a href="#rechtliches" class="hover:text-blue-400 transition-colors">Datenschutzerklärung</a>
       </nav>
       <img src="public/images/logo 2.jpg" alt="ReinGlanz B&E Logo" class="h-12 md:hidden" />
-      <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-blue-500 transition-colors absolute right-4">
+      <button id="mobile-menu-btn" class="md:hidden text-gray-200 hover:text-blue-400 transition-colors absolute right-4">
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 py-4 px-4">
-      <div class="flex flex-col space-y-3">
-        <a href="#leistungen" class="hover:text-blue-500 transition-colors">Leistungen</a>
-        <a href="#preise" class="hover:text-blue-500 transition-colors">Preise</a>
-        <a href="index.html#kontakt" class="hover:text-blue-500 transition-colors">Kontakt</a>
-        <a href="#rechtliches" class="hover:text-blue-500 transition-colors">Impressum</a>
-        <a href="#rechtliches" class="hover:text-blue-500 transition-colors">Datenschutzerklärung</a>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-700 py-4 px-4 dark:bg-gray-900">
+      <div class="flex flex-col space-y-3 dark:text-gray-200">
+        <a href="#leistungen" class="hover:text-blue-400 transition-colors">Leistungen</a>
+        <a href="#preise" class="hover:text-blue-400 transition-colors">Preise</a>
+        <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
+        <a href="#rechtliches" class="hover:text-blue-400 transition-colors">Impressum</a>
+        <a href="#rechtliches" class="hover:text-blue-400 transition-colors">Datenschutzerklärung</a>
       </div>
     </div>
   </header>
@@ -47,11 +43,11 @@
   <main class="relative z-10">
     <section class="mx-auto max-w-6xl px-4 pt-20 pb-16 md:py-28 text-center">
       <h1 class="text-4xl md:text-6xl font-bold leading-tight text-glow">Professionelle Gebäudereinigung.</h1>
-      <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Zwei junge Unternehmer aus <strong>Göppingen</strong>, bereit für makellose Sauberkeit in Ihrem Büro. Wir arbeiten <strong>werktags ab 18 Uhr</strong> und <strong>am Wochenende jederzeit</strong>.</p>
+      <p class="mt-4 text-lg text-gray-300 dark:text-gray-300 max-w-3xl mx-auto">Zwei junge Unternehmer aus <strong>Göppingen</strong>, bereit für makellose Sauberkeit in Ihrem Büro. Wir arbeiten <strong>werktags ab 18 Uhr</strong> und <strong>am Wochenende jederzeit</strong>.</p>
       <div class="mt-8 flex flex-wrap gap-4 justify-center">
         <a href="kontakt.html" class="btn-primary px-6 py-3 rounded-full font-bold">Angebot anfragen</a>
       </div>
-      <div class="mt-8 flex items-center justify-center gap-6 text-sm text-slate-500">
+      <div class="mt-8 flex items-center justify-center gap-6 text-sm text-gray-400 dark:text-gray-400">
         <span>★ Versichert</span>
         <span>★ Zuverlässig & Gründlich</span>
         <span>★ Jung, motiviert und engagiert</span>
@@ -60,66 +56,78 @@
 
     <section id="leistungen" class="mx-auto max-w-6xl px-4 py-12">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Unsere Leistungen</h2>
-      <p class="mt-2 text-slate-500 text-center">Für eine glänzende und saubere Umgebung.</p>
+      <p class="mt-2 text-gray-400 dark:text-gray-400 text-center">Für eine glänzende und saubere Umgebung.</p>
       <div class="mt-10 grid md:grid-cols-3 gap-8 text-center">
-        <div class="card p-6">
-          <svg class="h-12 w-12 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="card p-6 dark:bg-gray-800">
+          <svg class="h-12 w-12 mx-auto text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M4 17v4M2 19h4M17 3v4M15 5h4M19 17v4M17 19h4M12 5a2 2 0 100-4 2 2 0 000 4zM12 19a2 2 0 100-4 2 2 0 000 4zM12 12a2 2 0 100-4 2 2 0 000 4z" />
           </svg>
           <h3 class="font-bold text-xl mt-4 text-glow">Unterhaltsreinigung</h3>
-          <p class="text-sm text-slate-500 mt-2">Regelmäßige Reinigung von Büros und Geschäftsräumen.</p>
+          <p class="text-sm text-gray-400 dark:text-gray-400 mt-2">Regelmäßige Reinigung von Büros und Geschäftsräumen.</p>
         </div>
-        <div class="card p-6">
-          <svg class="h-12 w-12 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="card p-6 dark:bg-gray-800">
+          <svg class="h-12 w-12 mx-auto text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.69l5.66 5.66a8 8 0 11-11.32 0L12 2.69z" />
           </svg>
           <h3 class="font-bold text-xl mt-4 text-glow">Glasreinigung</h3>
-          <p class="text-sm text-slate-500 mt-2">Streifenfreie Sauberkeit für Fenster und Glasflächen.</p>
+          <p class="text-sm text-gray-400 dark:text-gray-400 mt-2">Streifenfreie Sauberkeit für Fenster und Glasflächen.</p>
         </div>
-        <div class="card p-6">
-          <svg class="h-12 w-12 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="card p-6 dark:bg-gray-800">
+          <svg class="h-12 w-12 mx-auto text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <h3 class="font-bold text-xl mt-4 text-glow">Flexible Zeiten</h3>
-          <p class="text-sm text-slate-500 mt-2">Wir arbeiten, wenn Sie es wünschen – auch am Wochenende.</p>
+          <p class="text-sm text-gray-400 dark:text-gray-400 mt-2">Wir arbeiten, wenn Sie es wünschen – auch am Wochenende.</p>
         </div>
       </div>
     </section>
 
     <section id="preise" class="mx-auto max-w-7xl px-4 py-12">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Unsere Dienstleistungen</h2>
-      <p class="mt-2 text-slate-500 text-center">Professionelle Reinigung für verschiedene Bereiche</p>
+      <p class="mt-2 text-gray-400 dark:text-gray-400 text-center">Professionelle Reinigung für verschiedene Bereiche</p>
       <div class="mt-16 space-y-16">
-        <div class="card overflow-hidden md:ml-0 lg:ml-12 shadow-lg">
+        <div class="card overflow-hidden md:ml-0 lg:ml-12 shadow-lg dark:bg-gray-800">
           <div class="md:flex">
             <img src="public/images/bild 1.jpg" alt="Schulreinigung" class="w-full md:w-1/2 h-80 object-cover" />
             <div class="p-8 md:w-1/2 flex flex-col justify-center">
               <h3 class="font-bold text-2xl text-glow">Unterhaltsreinigung (Schule, Kita)</h3>
-              <p class="text-base text-slate-600 mt-4 leading-relaxed">Schaffen Sie eine gesunde Lernumgebung! Unsere speziell geschulten Reinigungskräfte sorgen für hygienische Sauberkeit in Klassenzimmern, Sporthallen und Sanitäranlagen. Mit kindgerechten, schadstofffreien Reinigungsmitteln garantieren wir die Sicherheit Ihrer Schützlinge. Regelmäßige Desinfektion von Türgriffen, Tischen und Spielbereichen inklusive.</p>
+              <p class="text-base text-gray-300 dark:text-gray-300 mt-4 leading-relaxed">Schaffen Sie eine gesunde Lernumgebung! Unsere speziell geschulten Reinigungskräfte sorgen für hygienische Sauberkeit in Klassenzimmern, Sporthallen und Sanitäranlagen. Mit kindgerechten, schadstofffreien Reinigungsmitteln garantieren wir die Sicherheit Ihrer Schützlinge. Regelmäßige Desinfektion von Türgriffen, Tischen und Spielbereichen inklusive.</p>
               <div class="mt-6">
                 <a href="kontakt.html" class="btn-primary px-6 py-3 rounded-full font-bold inline-block">Jetzt Angebot einholen</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="card overflow-hidden md:mr-0 lg:mr-12 shadow-lg">
+        <div class="card overflow-hidden md:mr-0 lg:mr-12 shadow-lg dark:bg-gray-800">
           <div class="md:flex md:flex-row-reverse">
             <img src="public/images/bild 2.jpg" alt="Büroreinigung" class="w-full md:w-1/2 h-80 object-cover" />
             <div class="p-8 md:w-1/2 flex flex-col justify-center">
               <h3 class="font-bold text-2xl text-glow">Unterhaltsreinigung (Büro)</h3>
-              <p class="text-base text-slate-600 mt-4 leading-relaxed">Produktivität beginnt mit Sauberkeit! Wir reinigen Ihre Büroräume professionell und zuverlässig – von Schreibtischen über Böden bis zu Gemeinschaftsräumen. Flexible Arbeitszeiten nach Feierabend oder am Wochenende, damit Ihr Betrieb nicht gestört wird. Frische Büros für motivierte Mitarbeiter – das ist unser Versprechen!</p>
+              <p class="text-base text-gray-300 dark:text-gray-300 mt-4 leading-relaxed">Produktivität beginnt mit Sauberkeit! Wir reinigen Ihre Büroräume professionell und zuverlässig – von Schreibtischen über Böden bis zu Gemeinschaftsräumen. Flexible Arbeitszeiten nach Feierabend oder am Wochenende, damit Ihr Betrieb nicht gestört wird. Frische Büros für motivierte Mitarbeiter – das ist unser Versprechen!</p>
               <div class="mt-6">
                 <a href="kontakt.html" class="btn-primary px-6 py-3 rounded-full font-bold inline-block">Jetzt Angebot einholen</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="card overflow-hidden md:ml-0 lg:ml-12 shadow-lg">
+        <div class="card overflow-hidden md:ml-0 lg:ml-12 shadow-lg dark:bg-gray-800">
           <div class="md:flex">
             <img src="public/images/bild 3.jpg" alt="Praxisreinigung" class="w-full md:w-1/2 h-80 object-cover" />
             <div class="p-8 md:w-1/2 flex flex-col justify-center">
               <h3 class="font-bold text-2xl text-glow">Unterhaltsreinigung (Praxis)</h3>
-              <p class="text-base text-slate-600 mt-4 leading-relaxed">Hygiene auf höchstem Niveau! Ob Arztpraxis, Zahnarztpraxis oder Physiotherapie – wir kennen die strengen Anforderungen im Gesundheitswesen. Unsere Reinigungskräfte arbeiten nach Hygienestandards und verwenden professionelle Desinfektionsmittel. Wartebereich, Behandlungsräume und Sanitäranlagen erstrahlen in makelloser Sauberkeit. Vertrauen Sie auf unsere Expertise!</p>
+              <p class="text-base text-gray-300 dark:text-gray-300 mt-4 leading-relaxed">Hygiene auf höchstem Niveau! Ob Arztpraxis, Zahnarztpraxis oder Physiotherapie – wir kennen die strengen Anforderungen im Gesundheitswesen. Unsere Reinigungskräfte arbeiten nach Hygienestandards und verwenden professionelle Desinfektionsmittel. Wartebereich, Behandlungsräume und Sanitäranlagen erstrahlen in makelloser Sauberkeit. Vertrauen Sie auf unsere Expertise!</p>
+              <div class="mt-6">
+                <a href="kontakt.html" class="btn-primary px-6 py-3 rounded-full font-bold inline-block">Jetzt Angebot einholen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card overflow-hidden md:mr-0 lg:mr-12 shadow-lg dark:bg-gray-800">
+          <div class="md:flex md:flex-row-reverse">
+            <img src="public/images/bild 4.jpg" alt="Winterdienst" class="w-full md:w-1/2 h-80 object-cover" />
+            <div class="p-8 md:w-1/2 flex flex-col justify-center">
+              <h3 class="font-bold text-2xl text-glow">Winterdienst</h3>
+              <p class="text-base text-gray-300 dark:text-gray-300 mt-4 leading-relaxed">Sicher durch den Winter! Wenn Schnee und Eis Ihre Zufahrten, Parkplätze und Gehwege blockieren, sind wir zur Stelle. Zuverlässige Schneeräumung und professioneller Streudienst für Ihr Firmengelände. Frühmorgens einsatzbereit, damit Ihre Mitarbeiter und Kunden sicher ankommen. Wir halten Ihren Betrieb auch bei Minusgraden am Laufen!</p>
               <div class="mt-6">
                 <a href="kontakt.html" class="btn-primary px-6 py-3 rounded-full font-bold inline-block">Jetzt Angebot einholen</a>
               </div>
@@ -128,8 +136,8 @@
         </div>
       </div>
       <div class="mt-12 text-center">
-        <p class="text-lg text-slate-600 mb-6">Noch Fragen? Wir beraten Sie gerne persönlich!</p>
-        <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:text-blue-600 font-semibold text-lg">reinglanzbe@gmail.com</a>
+        <p class="text-lg text-gray-300 dark:text-gray-300 mb-6">Noch Fragen? Wir beraten Sie gerne persönlich!</p>
+        <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 hover:text-blue-500 font-semibold text-lg">reinglanzbe@gmail.com</a>
       </div>
     </section>
 
@@ -138,27 +146,28 @@
     <section id="rechtliches" class="mx-auto max-w-6xl px-4 py-12">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Impressum & Datenschutz</h2>
       <div class="mt-10 grid md:grid-cols-2 gap-8 text-sm">
-        <div class="card p-6">
+        <div class="card p-6 dark:bg-gray-800">
           <h3 class="font-semibold mb-1 text-glow">Impressum</h3>
-          <p class="text-slate-500 mb-3">Angaben gemäß § 5 TMG</p>
-          <p><strong>ReinGlanz B&E Gebäudereinigung</strong></p>
-          <p>Blumenstraße 5, 73084 Salach</p>
-          <p>Göppingen und Umgebung</p>
-          <p>E-Mail: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:underline">reinglanzbe@gmail.com</a></p>
-          <p>Vertretungsberechtigte: Emre Karabas und Bleond Mataj</p>
+          <p class="text-gray-400 dark:text-gray-400 mb-3">Angaben gemäß § 5 TMG</p>
+          <p class="dark:text-gray-200"><strong>ReinGlanz B&E Gebäudereinigung</strong></p>
+          <p class="dark:text-gray-200">Blumenstraße 5, 73084 Salach</p>
+          <p class="dark:text-gray-200">Göppingen und Umgebung</p>
+          <p class="dark:text-gray-200">E-Mail: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 hover:underline">reinglanzbe@gmail.com</a></p>
+          <p class="dark:text-gray-200">Telefon: <a href="tel:017621947717" class="text-blue-400 hover:underline">0176 21947717</a></p>
+          <p class="dark:text-gray-200">Vertretungsberechtigte: Emre Karabas und Bleond Mataj</p>
         </div>
-        <div class="card p-6">
+        <div class="card p-6 dark:bg-gray-800">
           <h3 class="font-semibold mb-1 text-glow">Datenschutzerklärung (Kurzfassung)</h3>
-           <p class="text-slate-500 mb-3">Worum es geht</p>
-          <p>Wir verarbeiten Ihre Daten (Name, Kontakt, Anfrageinhalte) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
-          <p>Ihre Rechte: Auskunft, Berichtigung, Löschung. Anfrage an: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:underline">reinglanzbe@gmail.com</a>.</p>
+           <p class="text-gray-400 dark:text-gray-400 mb-3">Worum es geht</p>
+          <p class="dark:text-gray-200">Wir verarbeiten Ihre Daten (Name, Kontakt, Anfrageinhalte) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
+          <p class="dark:text-gray-200">Ihre Rechte: Auskunft, Berichtigung, Löschung. Anfrage an: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 hover:underline">reinglanzbe@gmail.com</a>.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-gray-200 py-10 mt-12">
-    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-8 text-sm text-slate-500">
+  <footer class="border-t border-gray-700 dark:border-gray-700 py-10 mt-12 dark:bg-gray-900">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-8 text-sm text-gray-400 dark:text-gray-400">
       <div>
         <div class="font-bold text-lg mb-2 text-glow">ReinGlanz B&E</div>
         <p>Professionelle Sauberkeit für Ihr Business in Göppingen.</p>
@@ -166,21 +175,22 @@
       <div>
         <div class="font-semibold mb-2">Navigation</div>
         <ul class="space-y-1">
-          <li><a class="hover:text-blue-500" href="#leistungen">Leistungen</a></li>
-          <li><a class="hover:text-blue-500" href="#preise">Preise</a></li>
-          <li><a class="hover:text-blue-500" href="#kontakt">Kontakt</a></li>
-          <li><a class="hover:text-blue-500" href="#rechtliches">Impressum</a></li>
+          <li><a class="hover:text-blue-400" href="#leistungen">Leistungen</a></li>
+          <li><a class="hover:text-blue-400" href="#preise">Preise</a></li>
+          <li><a class="hover:text-blue-400" href="#kontakt">Kontakt</a></li>
+          <li><a class="hover:text-blue-400" href="#rechtliches">Impressum</a></li>
         </ul>
       </div>
       <div>
         <div class="font-semibold mb-2">Kontakt</div>
         <ul class="space-y-1">
-          <li>E-Mail: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:underline">reinglanzbe@gmail.com</a></li>
+          <li>E-Mail: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 hover:underline">reinglanzbe@gmail.com</a></li>
+          <li>Telefon: <a href="tel:017621947717" class="text-blue-400 hover:underline">0176 21947717</a></li>
           <li>Blumenstraße 5, 73084 Salach</li>
         </ul>
       </div>
     </div>
-    <div class="mt-8 text-center text-xs text-slate-400">© <span id="year"></span> ReinGlanz B&E – Alle Rechte vorbehalten.</div>
+    <div class="mt-8 text-center text-xs text-gray-500 dark:text-gray-500">© <span id="year"></span> ReinGlanz B&E – Alle Rechte vorbehalten.</div>
   </footer>
 
     <script src="public/script.js"></script>
