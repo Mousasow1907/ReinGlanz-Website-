@@ -55,7 +55,7 @@
     <section class="mx-auto max-w-4xl px-4 py-8">
       <div class="card dark:bg-gray-800 p-6">
         <h2 class="text-2xl font-bold text-center text-glow mb-6">Öffnungszeiten</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 dark:text-gray-300">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-300 dark:text-gray-300">
           <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg">
             <span class="font-semibold">Montag:</span>
             <span>Ab 18 Uhr</span>
@@ -80,7 +80,7 @@
             <span class="font-semibold">Samstag:</span>
             <span>Ab 8:00 Uhr</span>
           </div>
-          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg md:col-span-2">
+          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg md:col-start-2">
             <span class="font-semibold">Sonntag:</span>
             <span>Ab 8:00 Uhr</span>
           </div>
@@ -232,9 +232,9 @@
 
     <section id="rechtliches" class="mx-auto max-w-6xl px-4 py-12">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Impressum & Datenschutz</h2>
-      <div class="mt-10 grid md:grid-cols-2 gap-8 text-sm">
+      <div class="mt-10 space-y-8">
         <div class="card p-6 dark:bg-gray-800">
-          <h3 class="font-semibold mb-1 text-glow">Impressum</h3>
+          <h3 class="font-semibold text-xl mb-3 text-glow">Impressum</h3>
           <p class="text-gray-400 dark:text-gray-400 mb-3">Angaben gemäß § 5 TMG</p>
           <p class="dark:text-gray-200"><strong>ReinGlanz B&E Gebäudereinigung</strong></p>
           <p class="dark:text-gray-200">Blumenstraße 5, 73084 Salach</p>
@@ -244,10 +244,88 @@
           <p class="dark:text-gray-200">Vertretungsberechtigte: Emre Karabas und Bleond Mataj</p>
         </div>
         <div class="card p-6 dark:bg-gray-800">
-          <h3 class="font-semibold mb-1 text-glow">Datenschutzerklärung (Kurzfassung)</h3>
-           <p class="text-gray-400 dark:text-gray-400 mb-3">Worum es geht</p>
-          <p class="dark:text-gray-200">Wir verarbeiten Ihre Daten (Name, Kontakt, Anfrageinhalte) ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</p>
-          <p class="dark:text-gray-200">Ihre Rechte: Auskunft, Berichtigung, Löschung. Anfrage an: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 hover:underline">reinglanzbe@gmail.com</a>.</p>
+          <h3 class="font-semibold text-xl mb-4 text-glow">Datenschutzerklärung :</h3>
+
+          <div class="space-y-4 text-sm dark:text-gray-200">
+            <div>
+              <p class="mb-2">1.1 ReinglanzB&E ist der Schutz der personenbezogenen Daten der Benutzer dieser Website sehr wichtig; diese Richtlinie beschreibt die Erfassung, Verwendung und den Schutz personenbezogener Daten, die wir von Besuchern der Website erhalten.</p>
+              <p>1.2 ReinglanzB&E Service ist bestrebt, alle Daten, die wir über Kunden und Besucher der Website sammeln, zu schützen. Mit dem Besuch unserer Website und der Nutzung unserer Dienste erklären Sie sich mit der Verwendung von Cookies gemäß den Bestimmungen dieser Richtlinie einverstanden.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Erhobene Daten</h4>
+              <p class="mb-2">2.1 Wenn Sie unsere Website nutzen, kann es sein, dass wir Sie um Informationen bitten, die dazu verwendet werden können, Sie zu kontaktieren oder zu identifizieren. P&G Service erfasst nur den minimal erforderlichen Umfang an personenbezogenen Daten, um unsere Website und den von uns angebotenen Service zu verbessern.</p>
+              <p class="mb-2">2.2 Wir können automatisch folgende Arten von personenbezogenen Daten erfassen, speichern und verwenden:</p>
+              <p class="ml-4">(a) Informationen über Ihren Computer und Ihre Besuche auf dieser Website (einschließlich IP-Adresse, Browsertyp/-version und besuchte Seiten);</p>
+              <p class="ml-4">(b) Informationen, die Sie bei der Registrierung auf unserer Website oder bei der Anmeldung zu Nachrichten von uns (einschließlich Ihres Namens und Ihrer E-Mail-Adresse) angeben;</p>
+              <p class="ml-4">(c) Informationen über die Nutzung unserer Dienste oder andere über unsere Website initiierte Transaktionen (einschließlich Rechnungsadresse und Kreditkarteninformationen);</p>
+              <p class="ml-4">(d) Informationen, die Sie uns auf persönlichen Kommunikationswegen mitteilen oder senden.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Verwendung der Daten</h4>
+              <p class="mb-2">3.1 Personenbezogene Daten, die über unsere Website erfasst werden, werden ausschließlich für die in dieser Richtlinie genannten Zwecke verwendet.</p>
+              <p class="mb-2">3.2 Wir können Ihre persönlichen Daten verwenden, um:</p>
+              <p class="ml-4">(a) Unsere Website für Sie anzupassen;</p>
+              <p class="ml-4">(b) Ihre Nutzung unserer Website-Dienste zu ermöglichen;</p>
+              <p class="ml-4">(c) Ihnen Nachrichten, Erklärungen und andere Mitteilungen im Zusammenhang mit unserer Firma zuzusenden;</p>
+              <p class="ml-4">(d) Dritten nicht identifizierbare statistische Informationen über unsere Benutzer zur Verfügung zu stellen;</p>
+              <p class="ml-4">(e) Betrug zu verhindern und unsere Website sicher zu halten; und</p>
+              <p class="ml-4">(f) die Einhaltung der Nutzungsbedingungen unserer Website überprüfen.</p>
+              <p>3.3 Datenschutzeinstellungen können so eingestellt werden, dass die Protokollierung des Online-Verhaltens eingeschränkt wird.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Weitergabe von Daten</h4>
+              <p class="mb-2">4.1 Wir dürfen Ihre personenbezogenen Daten nur aus den in dieser Richtlinie genannten Gründen weitergeben.</p>
+              <p class="mb-2">4.2 Wir können Ihre personenbezogenen Daten weitergeben</p>
+              <p class="ml-4">(a) wenn dies gesetzlich vorgeschrieben ist;</p>
+              <p class="ml-4">(b) um unsere gesetzlichen Rechte auszuüben oder zu verteidigen; und</p>
+              <p class="ml-4">(c) wenn nicht anders in dieser Richtlinie erläutert, werden wir Ihre Daten nicht an Dritte weitergeben.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Aufbewahrung der Daten</h4>
+              <p class="mb-2">5.1 Unsere Verfahren zur Aufbewahrung der Daten sind so konzipiert, dass wir unseren gesetzlichen Verpflichtungen in Bezug auf die Speicherung und Löschung personenbezogener Daten nachkommen.</p>
+              <p class="mb-2">5.2 Von uns aus irgendwelchen Gründen verarbeitete personenbezogene Daten werden nicht länger aufbewahrt, als es für diese Zwecke erforderlich ist.</p>
+              <p class="mb-2">5.3 Wir bewahren Dokumente mit personenbezogenen Daten auf:</p>
+              <p class="ml-4">(a) wenn gesetzlich dazu verpflichtet; und</p>
+              <p class="ml-4">(b) Zur Ausübung oder Verteidigung unserer gesetzlichen Rechte.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Datensicherheit</h4>
+              <p class="mb-2">6.1 Die Übertragung von Informationen über das Internet ist niemals 100% sicher</p>
+              <p>6.2 Wir werden angemessene Maßnahmen ergreifen, um den Verlust oder Missbrauch Ihrer personenbezogenen Daten zu verhindern (z.B. SSL-Zertifikate).</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Änderungen</h4>
+              <p class="mb-2">7.1 Wir können diese Richtlinie regelmäßig ändern oder aktualisieren, indem wir eine neue Version auf unserer Website veröffentlichen.</p>
+              <p>7.2 Wir werden Sie über Änderungen an dieser Richtlinie informieren.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Cookies</h4>
+              <p class="mb-2">8.1 Wir können Cookies in Ihrem Webbrowser speichern, wenn Sie Seiten unserer Website besuchen.</p>
+              <p>8.2 Wenn Sie Cookies blockieren, können Sie möglicherweise nicht alle Funktionen unserer Website nutzen.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Websites von Drittanbietern</h4>
+              <p class="mb-2">9.1 Unsere Website kann Links zu Websites Dritter enthalten, die sich unserer Kontrolle entziehen und sich nicht in unserem Eigentum befinden.</p>
+              <p>9.2 Sie sollten die Datenschutzrichtlinien jeder Website, die Sie besuchen, lesen.</p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Unsere Kontaktdaten</h4>
+              <p class="mb-2">10.1 Sie können uns wie folgt kontaktieren:</p>
+              <p class="ml-4">(a) durch Verwendung unseres Kontaktformulars;</p>
+              <p class="ml-4">(b) per Post an Blumenstraße 5, Baden-Württemberg, Salach 73084;</p>
+              <p class="ml-4">(c) per Telefon unter +0176 21947717; und</p>
+              <p class="ml-4">(d) per E-Mail an <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 hover:underline">reinglanzbe@gmail.com</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
