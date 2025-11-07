@@ -15,7 +15,7 @@
 
   <header class="fixed-header top-0 z-40 solid-header border-b border-gray-200 w-full">
     <div class="px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-2">
+      <div class="flex-1 flex justify-center md:justify-start">
         <img src="public/images/logo 2.jpg" alt="ReinGlanz B&E Logo" class="h-12" />
       </div>
       <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -29,7 +29,7 @@
           <svg id="theme-toggle-light-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.464 4.95l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zm1.414 10.606l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 011.414-1.414zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1z"></path></svg>
         </button>
       </nav>
-      <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-blue-500 transition-colors">
+      <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-blue-500 transition-colors absolute right-4">
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -88,29 +88,50 @@
       </div>
     </section>
 
-    <section id="preise" class="mx-auto max-w-6xl px-4 py-12">
+    <section id="preise" class="mx-auto max-w-7xl px-4 py-12">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Unsere Dienstleistungen</h2>
       <p class="mt-2 text-slate-500 text-center">Professionelle Reinigung für verschiedene Bereiche</p>
-      <div class="mt-10 grid md:grid-cols-2 gap-8">
-        <div class="card overflow-hidden">
-          <img src="public/images/bild 1.jpg" alt="Schulreinigung" class="w-full h-64 object-cover" />
-          <div class="p-6">
-            <h3 class="font-bold text-xl text-glow">Unterhaltsreinigung (Schule, Kita)</h3>
-            <p class="text-sm text-slate-500 mt-2">Gründliche und hygienische Reinigung für Bildungseinrichtungen. Wir sorgen für eine saubere und sichere Umgebung für Kinder und Lehrkräfte.</p>
-            <p class="text-sm text-slate-600 mt-4"><strong>ab 1,60 € / m²</strong></p>
+      <div class="mt-16 space-y-16">
+        <div class="card overflow-hidden md:ml-0 lg:ml-12 shadow-lg">
+          <div class="md:flex">
+            <img src="public/images/bild 1.jpg" alt="Schulreinigung" class="w-full md:w-1/2 h-80 object-cover" />
+            <div class="p-8 md:w-1/2 flex flex-col justify-center">
+              <h3 class="font-bold text-2xl text-glow">Unterhaltsreinigung (Schule, Kita)</h3>
+              <p class="text-base text-slate-600 mt-4 leading-relaxed">Schaffen Sie eine gesunde Lernumgebung! Unsere speziell geschulten Reinigungskräfte sorgen für hygienische Sauberkeit in Klassenzimmern, Sporthallen und Sanitäranlagen. Mit kindgerechten, schadstofffreien Reinigungsmitteln garantieren wir die Sicherheit Ihrer Schützlinge. Regelmäßige Desinfektion von Türgriffen, Tischen und Spielbereichen inklusive.</p>
+              <div class="mt-6">
+                <a href="angebot.html" class="btn-primary px-6 py-3 rounded-full font-bold inline-block">Jetzt Angebot einholen</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card overflow-hidden">
-          <img src="public/images/bild 2.jpg" alt="Büroreinigung" class="w-full h-64 object-cover" />
-          <div class="p-6">
-            <h3 class="font-bold text-xl text-glow">Unterhaltsreinigung (Büro)</h3>
-            <p class="text-sm text-slate-500 mt-2">Professionelle Büroreinigung für ein produktives Arbeitsumfeld. Von Schreibtischen bis zu Böden – wir kümmern uns um alles.</p>
-            <p class="text-sm text-slate-600 mt-4"><strong>1,40 € / m² · Mindestpauschale 59 €</strong></p>
+        <div class="card overflow-hidden md:mr-0 lg:mr-12 shadow-lg">
+          <div class="md:flex md:flex-row-reverse">
+            <img src="public/images/bild 2.jpg" alt="Büroreinigung" class="w-full md:w-1/2 h-80 object-cover" />
+            <div class="p-8 md:w-1/2 flex flex-col justify-center">
+              <h3 class="font-bold text-2xl text-glow">Unterhaltsreinigung (Büro)</h3>
+              <p class="text-base text-slate-600 mt-4 leading-relaxed">Produktivität beginnt mit Sauberkeit! Wir reinigen Ihre Büroräume professionell und zuverlässig – von Schreibtischen über Böden bis zu Gemeinschaftsräumen. Flexible Arbeitszeiten nach Feierabend oder am Wochenende, damit Ihr Betrieb nicht gestört wird. Frische Büros für motivierte Mitarbeiter – das ist unser Versprechen!</p>
+              <div class="mt-6">
+                <a href="angebot.html" class="btn-primary px-6 py-3 rounded-full font-bold inline-block">Jetzt Angebot einholen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card overflow-hidden md:ml-0 lg:ml-12 shadow-lg">
+          <div class="md:flex">
+            <img src="public/images/bild 3.jpg" alt="Praxisreinigung" class="w-full md:w-1/2 h-80 object-cover" />
+            <div class="p-8 md:w-1/2 flex flex-col justify-center">
+              <h3 class="font-bold text-2xl text-glow">Unterhaltsreinigung (Praxis)</h3>
+              <p class="text-base text-slate-600 mt-4 leading-relaxed">Hygiene auf höchstem Niveau! Ob Arztpraxis, Zahnarztpraxis oder Physiotherapie – wir kennen die strengen Anforderungen im Gesundheitswesen. Unsere Reinigungskräfte arbeiten nach Hygienestandards und verwenden professionelle Desinfektionsmittel. Wartebereich, Behandlungsräume und Sanitäranlagen erstrahlen in makelloser Sauberkeit. Vertrauen Sie auf unsere Expertise!</p>
+              <div class="mt-6">
+                <a href="angebot.html" class="btn-primary px-6 py-3 rounded-full font-bold inline-block">Jetzt Angebot einholen</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="mt-8 text-center">
-        <a href="angebot.html" class="btn-primary px-8 py-3 rounded-full font-bold inline-block">Kostenloses Angebot anfordern</a>
+      <div class="mt-12 text-center">
+        <p class="text-lg text-slate-600 mb-6">Noch Fragen? Wir beraten Sie gerne persönlich!</p>
+        <a href="mailto:reinglanzbe@gmail.com" class="text-blue-500 hover:text-blue-600 font-semibold text-lg">reinglanzbe@gmail.com</a>
       </div>
     </section>
 
