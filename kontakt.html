@@ -14,17 +14,17 @@
 <body class="dark">
 
   <header class="sticky top-0 z-40 solid-header border-b border-gray-700 dark:border-gray-700 w-full dark:bg-gray-900">
-    <div class="px-4 py-3 flex items-center justify-center md:justify-between">
-      <nav class="hidden md:flex items-center gap-6 text-sm dark:text-gray-200">
+    <div class="px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="md:hidden">
+        <img src="public/images/logo 2.jpg" alt="ReinGlanz B&E Logo" class="h-12" />
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm dark:text-gray-200 mx-auto">
         <a href="index.html#leistungen" class="hover:text-blue-400 transition-colors">Leistungen</a>
         <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
         <a href="index.html#rechtliches" class="hover:text-blue-400 transition-colors">Impressum</a>
         <a href="index.html#rechtliches" class="hover:text-blue-400 transition-colors">Datenschutzerklärung</a>
       </nav>
-      <a href="index.html" class="md:hidden">
-        <img src="public/images/logo 2.jpg" alt="ReinGlanz B&E Logo" class="h-12" />
-      </a>
-      <button id="mobile-menu-btn" class="md:hidden text-gray-200 hover:text-blue-400 transition-colors absolute right-4">
+      <button id="mobile-menu-btn" class="md:hidden text-gray-200 hover:text-blue-400 transition-colors">
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -32,10 +32,9 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden border-t border-gray-700 py-4 px-4 dark:bg-gray-900">
       <div class="flex flex-col space-y-3 dark:text-gray-200">
-        <a href="index.html#leistungen" class="hover:text-blue-400 transition-colors">Leistungen</a>
-        <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
         <a href="index.html#rechtliches" class="hover:text-blue-400 transition-colors">Impressum</a>
         <a href="index.html#rechtliches" class="hover:text-blue-400 transition-colors">Datenschutzerklärung</a>
+        <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
       </div>
     </div>
   </header>
