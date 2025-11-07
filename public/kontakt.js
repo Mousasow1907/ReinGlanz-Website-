@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       try {
-        const supabaseUrl = 'https://sgghusepvjkexafwtfqz.supabase.co';
-        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNnZ2h1c2VwdmprZXhhZnd0ZnF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NzQ1MTksImV4cCI6MjA1MjQ1MDUxOX0.2w9vWrXZ9t1VkbDv1WMQbKlMEjRGOpQ3eDsgvkJlTao';
+        const supabaseUrl = 'https://vfhhucchsbyvpzufhsgq.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZmaGh1Y2Noc2J5dnB6dWZoc2dxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI1NDE2MjQsImV4cCI6MjA3ODExNzYyNH0.EdM0vmv7p7iZ5qbMYXTyNQK7mlSOKDLua0HCA9UcgvU';
 
         const response = await fetch(`${supabaseUrl}/functions/v1/send-contact-email`, {
           method: 'POST',
