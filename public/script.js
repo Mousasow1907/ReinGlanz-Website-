@@ -155,4 +155,27 @@ Viele Grüße
             });
         });
     }
+
+    // Quick contact form
+    const quickContactForm = document.getElementById('quick-contact-form');
+    if (quickContactForm) {
+        quickContactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('quick-name').value;
+            const email = document.getElementById('quick-email').value;
+            const message = document.getElementById('quick-message').value;
+
+            const subject = 'Kontaktanfrage von ' + name;
+            const body = `
+Name: ${name}
+E-Mail: ${email}
+
+Nachricht:
+${message}
+            `;
+
+            window.location.href = `mailto:reinglanzbe@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    }
 });

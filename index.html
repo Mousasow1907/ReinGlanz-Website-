@@ -17,7 +17,6 @@
     <div class="px-4 py-3 flex items-center justify-center md:justify-between">
       <nav class="hidden md:flex items-center gap-6 text-sm dark:text-gray-200">
         <a href="#leistungen" class="hover:text-blue-400 transition-colors">Leistungen</a>
-        <a href="#preise" class="hover:text-blue-400 transition-colors">Preise</a>
         <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
         <a href="#rechtliches" class="hover:text-blue-400 transition-colors">Impressum</a>
         <a href="#rechtliches" class="hover:text-blue-400 transition-colors">Datenschutzerklärung</a>
@@ -32,7 +31,6 @@
     <div id="mobile-menu" class="hidden md:hidden border-t border-gray-700 py-4 px-4 dark:bg-gray-900">
       <div class="flex flex-col space-y-3 dark:text-gray-200">
         <a href="#leistungen" class="hover:text-blue-400 transition-colors">Leistungen</a>
-        <a href="#preise" class="hover:text-blue-400 transition-colors">Preise</a>
         <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
         <a href="#rechtliches" class="hover:text-blue-400 transition-colors">Impressum</a>
         <a href="#rechtliches" class="hover:text-blue-400 transition-colors">Datenschutzerklärung</a>
@@ -51,6 +49,42 @@
         <span>★ Versichert</span>
         <span>★ Zuverlässig & Gründlich</span>
         <span>★ Jung, motiviert und engagiert</span>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-4xl px-4 py-8">
+      <div class="card dark:bg-gray-800 p-6">
+        <h2 class="text-2xl font-bold text-center text-glow mb-6">Öffnungszeiten</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 dark:text-gray-300">
+          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg">
+            <span class="font-semibold">Montag:</span>
+            <span>Ab 18 Uhr</span>
+          </div>
+          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg">
+            <span class="font-semibold">Dienstag:</span>
+            <span>Ab 18 Uhr</span>
+          </div>
+          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg">
+            <span class="font-semibold">Mittwoch:</span>
+            <span>Ab 18 Uhr</span>
+          </div>
+          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg">
+            <span class="font-semibold">Donnerstag:</span>
+            <span>Ab 18 Uhr</span>
+          </div>
+          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg">
+            <span class="font-semibold">Freitag:</span>
+            <span>Ab 18 Uhr</span>
+          </div>
+          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg">
+            <span class="font-semibold">Samstag:</span>
+            <span>Ab 8:00 Uhr</span>
+          </div>
+          <div class="flex justify-between items-center p-3 bg-gray-900/50 rounded-lg md:col-span-2">
+            <span class="font-semibold">Sonntag:</span>
+            <span>Ab 8:00 Uhr</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -137,11 +171,64 @@
       </div>
       <div class="mt-12 text-center">
         <p class="text-lg text-gray-300 dark:text-gray-300 mb-6">Noch Fragen? Wir beraten Sie gerne persönlich!</p>
-        <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 hover:text-blue-500 font-semibold text-lg">reinglanzbe@gmail.com</a>
       </div>
     </section>
 
-    
+    <section id="kontakt" class="mx-auto max-w-3xl px-4 py-12">
+      <div class="card dark:bg-gray-800 p-8">
+        <h2 class="text-3xl font-bold text-center text-glow mb-2">Kontakt aufnehmen</h2>
+        <p class="text-center text-gray-300 dark:text-gray-300 mb-8">Senden Sie uns eine Nachricht und wir melden uns schnellstmöglich bei Ihnen.</p>
+
+        <form id="quick-contact-form" class="space-y-6">
+          <div>
+            <label for="quick-name" class="block text-sm font-semibold dark:text-gray-200 mb-2">Name *</label>
+            <input
+              type="text"
+              id="quick-name"
+              name="name"
+              required
+              class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Ihr Name"
+            />
+          </div>
+
+          <div>
+            <label for="quick-email" class="block text-sm font-semibold dark:text-gray-200 mb-2">E-Mail *</label>
+            <input
+              type="email"
+              id="quick-email"
+              name="email"
+              required
+              class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="ihre@email.de"
+            />
+          </div>
+
+          <div>
+            <label for="quick-message" class="block text-sm font-semibold dark:text-gray-200 mb-2">Ihre Nachricht *</label>
+            <textarea
+              id="quick-message"
+              name="message"
+              required
+              rows="4"
+              class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Wie können wir Ihnen helfen?"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full btn-primary px-6 py-4 rounded-full font-bold text-lg transition-all hover:scale-105"
+          >
+            Nachricht senden
+          </button>
+
+          <p class="text-xs text-gray-400 dark:text-gray-400 text-center">
+            * Pflichtfelder
+          </p>
+        </form>
+      </div>
+    </section>
 
     <section id="rechtliches" class="mx-auto max-w-6xl px-4 py-12">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Impressum & Datenschutz</h2>
@@ -176,7 +263,6 @@
         <div class="font-semibold mb-2">Navigation</div>
         <ul class="space-y-1">
           <li><a class="hover:text-blue-400" href="#leistungen">Leistungen</a></li>
-          <li><a class="hover:text-blue-400" href="#preise">Preise</a></li>
           <li><a class="hover:text-blue-400" href="#kontakt">Kontakt</a></li>
           <li><a class="hover:text-blue-400" href="#rechtliches">Impressum</a></li>
         </ul>
