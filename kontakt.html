@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReinGlanz B&E – Kontaktformular</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/custom.css">
+</head>
+<body class="dark">
+
+  <header class="sticky top-0 z-40 solid-header border-b border-gray-700 dark:border-gray-700 w-full dark:bg-gray-900">
+    <div class="px-4 py-3 flex items-center justify-center md:justify-between">
+      <nav class="hidden md:flex items-center gap-6 text-sm dark:text-gray-200">
+        <a href="index.html#leistungen" class="hover:text-blue-400 transition-colors">Leistungen</a>
+        <a href="index.html#preise" class="hover:text-blue-400 transition-colors">Preise</a>
+        <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
+        <a href="index.html#rechtliches" class="hover:text-blue-400 transition-colors">Impressum</a>
+        <a href="index.html#rechtliches" class="hover:text-blue-400 transition-colors">Datenschutzerklärung</a>
+      </nav>
+      <a href="index.html" class="md:hidden">
+        <img src="public/images/logo 2.jpg" alt="ReinGlanz B&E Logo" class="h-12" />
+      </a>
+      <button id="mobile-menu-btn" class="md:hidden text-gray-200 hover:text-blue-400 transition-colors absolute right-4">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-700 py-4 px-4 dark:bg-gray-900">
+      <div class="flex flex-col space-y-3 dark:text-gray-200">
+        <a href="index.html#leistungen" class="hover:text-blue-400 transition-colors">Leistungen</a>
+        <a href="index.html#preise" class="hover:text-blue-400 transition-colors">Preise</a>
+        <a href="index.html#kontakt" class="hover:text-blue-400 transition-colors">Kontakt</a>
+        <a href="index.html#rechtliches" class="hover:text-blue-400 transition-colors">Impressum</a>
+        <a href="index.html#rechtliches" class="hover:text-blue-400 transition-colors">Datenschutzerklärung</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-6 py-12 mt-10">
+    <div class="card dark:bg-gray-800 dark:text-white p-8">
+      <div class="flex items-center justify-center mb-8">
+        <img src="public/images/logo 2.jpg" alt="ReinGlanz B&E Logo" class="h-24" />
+      </div>
+
+      <h1 class="text-3xl font-bold text-center text-glow mb-2">Kostenloses Angebot anfordern</h1>
+      <p class="text-center text-gray-300 dark:text-gray-300 mb-8">Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.</p>
+
+      <form id="contact-form" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-semibold dark:text-gray-200 mb-2">Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Ihr Name"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-semibold dark:text-gray-200 mb-2">E-Mail *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="ihre@email.de"
+            />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label for="phone" class="block text-sm font-semibold dark:text-gray-200 mb-2">Telefon</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Ihre Telefonnummer"
+            />
+          </div>
+
+          <div>
+            <label for="company" class="block text-sm font-semibold dark:text-gray-200 mb-2">Firma/Einrichtung</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Firmenname"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="service" class="block text-sm font-semibold dark:text-gray-200 mb-2">Art der Reinigung *</label>
+          <select
+            id="service"
+            name="service"
+            required
+            class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          >
+            <option value="">Bitte wählen...</option>
+            <option value="buero">Büroreinigung</option>
+            <option value="schule">Schul-/Kitareinigung</option>
+            <option value="praxis">Praxisreinigung</option>
+            <option value="fenster">Fensterreinigung</option>
+            <option value="sonstiges">Sonstiges</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="area" class="block text-sm font-semibold dark:text-gray-200 mb-2">Fläche (m²)</label>
+          <input
+            type="number"
+            id="area"
+            name="area"
+            min="0"
+            class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder="z.B. 100"
+          />
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-semibold dark:text-gray-200 mb-2">Ihre Nachricht *</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows="5"
+            class="w-full rounded-lg px-4 py-3 dark:bg-gray-700 dark:text-white dark:border-gray-600 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder="Beschreiben Sie Ihre Anforderungen..."
+          ></textarea>
+        </div>
+
+        <div id="status-message" class="hidden p-4 rounded-lg"></div>
+
+        <button
+          type="submit"
+          id="submit-btn"
+          class="w-full btn-primary px-6 py-4 rounded-full font-bold text-lg transition-all hover:scale-105"
+        >
+          Anfrage senden
+        </button>
+
+        <p class="text-xs text-gray-400 dark:text-gray-400 text-center">
+          * Pflichtfelder. Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-700 dark:border-gray-700 py-10 mt-12 dark:bg-gray-900">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-8 text-sm text-slate-400 dark:text-slate-400">
+      <div>
+        <div class="font-bold text-lg mb-2 text-glow">ReinGlanz B&E</div>
+        <p>Professionelle Sauberkeit für Ihr Business in Göppingen.</p>
+      </div>
+      <div>
+        <div class="font-semibold mb-2">Navigation</div>
+        <ul class="space-y-1">
+          <li><a class="hover:text-blue-400 dark:hover:text-blue-400" href="index.html#leistungen">Leistungen</a></li>
+          <li><a class="hover:text-blue-400 dark:hover:text-blue-400" href="index.html#preise">Preise</a></li>
+          <li><a class="hover:text-blue-400 dark:hover:text-blue-400" href="index.html#kontakt">Kontakt</a></li>
+          <li><a class="hover:text-blue-400 dark:hover:text-blue-400" href="index.html#rechtliches">Impressum</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-2">Kontakt</div>
+        <ul class="space-y-1">
+          <li>E-Mail: <a href="mailto:reinglanzbe@gmail.com" class="text-blue-400 dark:text-blue-400 hover:underline">reinglanzbe@gmail.com</a></li>
+          <li>Blumenstraße 5, 73084 Salach</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-slate-500 dark:text-slate-500">© <span id="year"></span> ReinGlanz B&E – Alle Rechte vorbehalten.</div>
+  </footer>
+
+  <script src="public/kontakt.js"></script>
+  <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+</body>
+</html>
