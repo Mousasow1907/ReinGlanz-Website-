@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (result.success) {
           statusMessage.className = 'p-4 rounded-lg bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 border border-green-300 dark:border-green-700';
-          statusMessage.textContent = 'Vielen Dank! Ihre Anfrage wurde erfolgreich versendet. Wir melden uns schnellstmöglich bei Ihnen.';
+          statusMessage.textContent = 'Vielen Dank! Ihr Angebot wurde erfolgreich versendet. Wir melden uns schnellstmöglich bei Ihnen.';
           statusMessage.classList.remove('hidden');
 
           form.reset();
@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       } catch (error) {
         statusMessage.className = 'p-4 rounded-lg bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 border border-red-300 dark:border-red-700';
-        statusMessage.textContent = 'Fehler beim Senden der Anfrage. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt per E-Mail.';
+        statusMessage.textContent = 'Fehler beim Senden des Angebots. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt per E-Mail.';
         statusMessage.classList.remove('hidden');
       } finally {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Anfrage senden';
+        submitBtn.textContent = 'Angebot senden';
       }
     });
   }

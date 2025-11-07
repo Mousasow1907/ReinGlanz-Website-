@@ -65,7 +65,7 @@ Zeitpunkt: ${new Date().toLocaleString("de-DE", { timeZone: "Europe/Berlin" })}
         from: "ReinGlanz B&E <onboarding@resend.dev>",
         to: ["reinglanzbe@gmail.com"],
         reply_to: formData.email,
-        subject: `Neue Anfrage: ${formData.service} - ${formData.name}`,
+        subject: `Neues Angebot: ${formData.service} - ${formData.name}`,
         text: emailBody,
       }),
     });
@@ -79,7 +79,7 @@ Zeitpunkt: ${new Date().toLocaleString("de-DE", { timeZone: "Europe/Berlin" })}
     return new Response(
       JSON.stringify({ 
         success: true, 
-        message: "Ihre Anfrage wurde erfolgreich versendet!" 
+        message: "Ihr Angebot wurde erfolgreich versendet!" 
       }),
       {
         status: 200,
