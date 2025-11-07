@@ -3,28 +3,26 @@ headers = []
 redirects = []
 
 [functions]
-  # global für alle Functions
-  # timeout = 26              # <— optional: als Zahl in Sekunden, nicht als String
-  external_node_modules = ["module-one", "module-two"]
-
-# Optional: per-Function (hier Wildcard für alle)
-# [functions."*"]
-#   timeout = 26
+external_node_modules = [ "module-one", "module-two" ]
 
 [build]
-  publish = "."
-  publishOrigin = "default"
+publish = "dist"
+publishOrigin = "default"
+command = "npm run build"
 
 [build.environment]
 
+
 [build.processing]
+[build.processing.css]
 
-  [build.processing.css]
 
-  [build.processing.html]
+[build.processing.html]
 
-  [build.processing.images]
 
-  [build.processing.js]
+[build.processing.images]
+
+
+[build.processing.js]
 
 [build.services]
