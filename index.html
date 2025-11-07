@@ -89,85 +89,28 @@
     </section>
 
     <section id="preise" class="mx-auto max-w-6xl px-4 py-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Ihre Investition in Sauberkeit</h2>
-      <p class="mt-2 text-slate-500 text-center">Berechnen Sie die Kosten für Ihre individuelle Reinigung.</p>
-      <div class="mt-10 grid lg:grid-cols-[1fr_2fr] gap-8">
-        <div class="card p-6">
-          <h3 class="font-bold text-xl text-glow">Kostenübersicht</h3>
-          <p class="text-sm text-slate-500 mb-6">Fixe Richtwerte für den Kreis Göppingen</p>
-          <div class="space-y-3">
-            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="buero" data-price="1.4">
-              <div class="font-semibold">Unterhaltsreinigung (Büro)</div>
-              <div class="text-sm text-slate-500">1,40 € / m² · Mindestpauschale 59 €</div>
-            </div>
-            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="buero-fenster" data-price="1.8">
-              <div class="font-semibold">Unterhaltsreinigung (Büro) + Fenster</div>
-              <div class="text-sm text-slate-500">ab 1,80 € / m²</div>
-            </div>
-            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="praxis" data-price="1.8">
-              <div class="font-semibold">Unterhaltsreinigung (Praxis)</div>
-              <div class="text-sm text-slate-500">ab 1,80 € / m²</div>
-            </div>
-            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="praxis-fenster" data-price="2.2">
-              <div class="font-semibold">Unterhaltsreinigung (Praxis) + Fenster</div>
-              <div class="text-sm text-slate-500">ab 2,20 € / m²</div>
-            </div>
-            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="schule" data-price="1.6">
-              <div class="font-semibold">Unterhaltsreinigung (Schule, Kita)</div>
-              <div class="text-sm text-slate-500">ab 1,60 € / m²</div>
-            </div>
-            <div class="offer-card p-4 border border-gray-200 rounded-xl" data-service="schule-fenster" data-price="2.0">
-              <div class="font-semibold">Unterhaltsreinigung (Schule, Kita) + Fenster</div>
-              <div class="text-sm text-slate-500">ab 2,00 € / m²</div>
-            </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-glow">Unsere Dienstleistungen</h2>
+      <p class="mt-2 text-slate-500 text-center">Professionelle Reinigung für verschiedene Bereiche</p>
+      <div class="mt-10 grid md:grid-cols-2 gap-8">
+        <div class="card overflow-hidden">
+          <img src="public/images/bild 1.jpg" alt="Schulreinigung" class="w-full h-64 object-cover" />
+          <div class="p-6">
+            <h3 class="font-bold text-xl text-glow">Unterhaltsreinigung (Schule, Kita)</h3>
+            <p class="text-sm text-slate-500 mt-2">Gründliche und hygienische Reinigung für Bildungseinrichtungen. Wir sorgen für eine saubere und sichere Umgebung für Kinder und Lehrkräfte.</p>
+            <p class="text-sm text-slate-600 mt-4"><strong>ab 1,60 € / m²</strong></p>
           </div>
         </div>
-        <div class="card p-6">
-          <h3 class="font-bold text-xl text-glow">Ihr persönlicher Kostenrechner</h3>
-          <p class="text-sm text-slate-500 mb-4">Kalkulieren Sie Ihre monatlichen Kosten</p>
-          <div>
-            <label class="text-sm font-semibold">Wählen Sie Ihre Reinigungsart</label>
-            <div class="mt-2 grid grid-cols-2 gap-2" id="service-tabs">
-              <div class="service-tab active" data-service="buero" data-price="1.4">Büro</div>
-              <div class="service-tab" data-service="buero-fenster" data-price="1.8">Büro + Fenster</div>
-              <div class="service-tab" data-service="praxis" data-price="1.8">Praxis</div>
-              <div class="service-tab" data-service="praxis-fenster" data-price="2.2">Praxis + Fenster</div>
-              <div class="service-tab" data-service="schule" data-price="1.6">Schule/Kita</div>
-              <div class="service-tab" data-service="schule-fenster" data-price="2.0">Schule/Kita + Fenster</div>
-            </div>
-          </div>
-          <div class="space-y-4 mt-4">
-            <div>
-              <label class="text-sm font-semibold">Verfügbare Tage</label>
-              <div class="mt-1 grid grid-cols-2 gap-2">
-                <label class="inline-flex items-center"><input type="checkbox" id="day-monday" class="mr-2">Montag</label>
-                <label class="inline-flex items-center"><input type="checkbox" id="day-tuesday" class="mr-2">Dienstag</label>
-                <label class="inline-flex items-center"><input type="checkbox" id="day-wednesday" class="mr-2">Mittwoch</label>
-                <label class="inline-flex items-center"><input type="checkbox" id="day-thursday" class="mr-2">Donnerstag</label>
-                <label class="inline-flex items-center"><input type="checkbox" id="day-friday" class="mr-2">Freitag</label>
-                <label class="inline-flex items-center"><input type="checkbox" id="day-saturday" class="mr-2">Samstag</label>
-                <label class="inline-flex items-center"><input type="checkbox" id="day-sunday" class="mr-2">Sonntag</label>
-              </div>
-            </div>
-            <div>
-              <label for="start-time" class="text-sm font-semibold">Startzeit</label>
-              <input type="time" id="start-time" value="08:00" class="mt-1 w-full rounded px-2 py-1">
-            </div>
-            <div class="grid grid-cols-2 gap-4">
-              <div><label class="text-sm">Fläche (m²)</label><input id="qm" type="number" value="100" class="mt-1 w-full rounded px-2 py-1"></div>
-              <div><label class="text-sm">Preis pro m² (€)</label><input id="preisQm" type="text" value="1,4" class="mt-1 w-full rounded px-2 py-1" disabled></div>
-              <div><label class="text-sm">Wochen / Monat</label><input id="wochen" type="number" value="4" class="mt-1 w-full rounded px-2 py-1"></div>
-              <div><label class="text-sm">Anzahl</label><input id="anzahl" type="number" value="0" class="mt-1 w-full rounded px-2 py-1" disabled></div>
-            </div>
-            <div id="outQm" class="p-3 rounded-xl bg-slate-100 border border-gray-200 text-sm space-y-1"></div>
-            <div>
-                <label class="text-sm">Sonstige Fragen</label>
-                <textarea id="anfrage" class="mt-1 w-full rounded px-2 py-1" rows="4"></textarea>
-            </div>
-            <button id="send" class="btn-primary px-6 py-3 rounded-full font-bold w-full">Anfrage senden</button>
-            
+        <div class="card overflow-hidden">
+          <img src="public/images/bild 2.jpg" alt="Büroreinigung" class="w-full h-64 object-cover" />
+          <div class="p-6">
+            <h3 class="font-bold text-xl text-glow">Unterhaltsreinigung (Büro)</h3>
+            <p class="text-sm text-slate-500 mt-2">Professionelle Büroreinigung für ein produktives Arbeitsumfeld. Von Schreibtischen bis zu Böden – wir kümmern uns um alles.</p>
+            <p class="text-sm text-slate-600 mt-4"><strong>1,40 € / m² · Mindestpauschale 59 €</strong></p>
           </div>
         </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a href="angebot.html" class="btn-primary px-8 py-3 rounded-full font-bold inline-block">Kostenloses Angebot anfordern</a>
       </div>
     </section>
 
