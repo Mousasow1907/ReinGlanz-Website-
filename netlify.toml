@@ -6,7 +6,7 @@ redirects = []
 external_node_modules = [ "module-one", "module-two" ]
 
 [build]
-publish = "."
+publish = "dist"
 publishOrigin = "default"
 command = "npm run build"
 
